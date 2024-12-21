@@ -4,6 +4,7 @@ extends Node2D
 @export var ennemy : PackedScene
 
 var distance : float = 800
+var can_spawn : bool = true
 
 @export var ennemy_types : Array[Ennemy]
 
@@ -20,7 +21,16 @@ var second : int:
 			minute += 1
 		%Second.text = str(second).lpad(2,'0')
 
+func _physics_process(delta):
+	if get_tree().get_node_count_in_group("Ennemy") < 1500:
+		can_spawn = true
+	else:
+		can_spawn = false
+
 func spawn(pos : Vector2, elite: bool = false):
+	if not can_spawn and not elite:
+		return
+			
 	var ennemy_instance = ennemy.instantiate()
 	
 	ennemy_instance.type = ennemy_types[min(minute, ennemy_types.size()-1)]

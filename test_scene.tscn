@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://brjvgkh7f0461"]
+
+[ext_resource type="PackedScene" uid="uid://bytik7vxy8glv" path="res://player.tscn" id="1_1830k"]
+[ext_resource type="Script" path="res://test_scene.gd" id="1_f10fi"]
+[ext_resource type="PackedScene" uid="uid://bedmfbwlbe7hr" path="res://spawner.tscn" id="2_0o2h1"]
+
+[node name="TestScene" type="Node2D"]
+script = ExtResource("1_f10fi")
+
+[node name="Spawner" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_0o2h1")]
+player = NodePath("../Player")
+
+[node name="Player" parent="." instance=ExtResource("1_1830k")]
+position = Vector2(649, 360)

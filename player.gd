@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 var speed: float = 500
+const acc = 50
+var motion = Vector2()
 var health: float = 100:
 	set(value):
 		health = value
@@ -8,7 +10,23 @@ var health: float = 100:
 
 func _physics_process(delta):
 	velocity = Input.get_vector("left","right","up","down") * speed
-	move_and_collide(velocity * delta)
+	if velocity.x > 0:
+		motion.x = min(motion.x + acc, speed)
+	elif velocity.x < 0:
+		motion.x = max(motion.x - acc, -speed)
+	else:
+		motion.x = lerp(motion.x, 0.0, 0.2)
+		
+	if velocity.y > 0:
+		motion.y = min(motion.y + acc, speed)
+	elif velocity.y < 0:
+		motion.y = max(motion.y - acc, -speed)
+	else:
+		motion.y = lerp(motion.y, 0.0, 0.2)
+	
+	
+	print(motion)
+	move_and_collide(motion * delta)
 
 func take_damage(amount):
 	health -= amount

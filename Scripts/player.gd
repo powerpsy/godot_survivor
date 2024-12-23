@@ -12,7 +12,7 @@ var nearest_ennemy : CharacterBody2D
 var nearest_ennemy_distance : float = INF
 
 func _physics_process(delta):
-	if nearest_ennemy:
+	if is_instance_valid(nearest_ennemy):
 		nearest_ennemy_distance = nearest_ennemy.separation
 	else:
 		nearest_ennemy_distance = INF

@@ -3,10 +3,9 @@
 [ext_resource type="Script" path="res://Scripts/EnnemyType.gd" id="1_vlndo"]
 [ext_resource type="Texture2D" uid="uid://blepgh8og7llg" path="res://Data/32x32 single battlers/003.png" id="2_wicyc"]
 
-
 [resource]
 script = ExtResource("1_vlndo")
 title = "Blob"
 texture = ExtResource("2_wicyc")
-health = 0.0
+health = 5.0
 damage = 6.0

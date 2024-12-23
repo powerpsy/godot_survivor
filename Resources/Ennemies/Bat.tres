@@ -3,10 +3,9 @@
 [ext_resource type="Script" path="res://Scripts/EnnemyType.gd" id="1_1x5ve"]
 [ext_resource type="Texture2D" uid="uid://s868pqvbrt1k" path="res://Data/32x32 single battlers/16 v1.png" id="2_vi8gl"]
 
-
 [resource]
 script = ExtResource("1_1x5ve")
 title = "Bat"
 texture = ExtResource("2_vi8gl")
-health = 0.0
+health = 3.0
 damage = 1.0

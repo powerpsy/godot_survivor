@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://dtajlnopsns8x"]
+[gd_scene load_steps=9 format=3 uid="uid://dtajlnopsns8x"]
 
 [ext_resource type="Script" path="res://Scripts/projectile.gd" id="1_62cof"]
 
@@ -7,6 +7,35 @@ size = Vector2(16, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ge8hr"]
 size = Vector2(16, 16)
+
+[sub_resource type="Gradient" id="Gradient_ltmq4"]
+offsets = PackedFloat32Array(0, 0.992647)
+colors = PackedColorArray(0.691268, 0.000695586, 0.754109, 1, 0, 0, 1, 0.596078)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_j6f1r"]
+gradient = SubResource("Gradient_ltmq4")
+
+[sub_resource type="Curve" id="Curve_enr22"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_yibtd"]
+curve = SubResource("Curve_enr22")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ex47g"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 8.0
+initial_velocity_min = -10.0
+initial_velocity_max = 10.0
+gravity = Vector3(0, 0, 0)
+scale_min = 2.0
+scale_max = 3.0
+scale_curve = SubResource("CurveTexture_yibtd")
+color_ramp = SubResource("GradientTexture1D_j6f1r")
+turbulence_enabled = true
+turbulence_noise_speed = Vector3(0, 1, 0)
+turbulence_influence_max = 0.284
 
 [node name="Projectile" type="Area2D"]
 collision_layer = 0
@@ -20,6 +49,10 @@ texture = SubResource("PlaceholderTexture2D_tk48a")
 shape = SubResource("RectangleShape2D_ge8hr")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+amount = 100
+process_material = SubResource("ParticleProcessMaterial_ex47g")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_screen_exited"]

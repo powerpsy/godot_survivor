@@ -3,10 +3,9 @@
 [ext_resource type="Script" path="res://Scripts/EnnemyType.gd" id="1_ueid2"]
 [ext_resource type="Texture2D" uid="uid://1pluvd8ecs5g" path="res://Data/32x32 single battlers/012.png" id="2_0fvrq"]
 
-
 [resource]
 script = ExtResource("1_ueid2")
 title = "Toad"
 texture = ExtResource("2_0fvrq")
-health = 0.0
+health = 10.0
 damage = 11.0

@@ -24,9 +24,11 @@ func _physics_process(delta):
 	knockback_update(delta)
 	
 func check_separation(delta):
-	var separation = (player_reference.position - position).length()
+	separation = (player_reference.position - position).length()
 	if separation >=1500 and not elite:
 		queue_free()
+	if separation < player_reference.nearest_ennemy_distance:
+		player_reference.nearest_ennemy = self
 
 func knockback_update(delta):
 	velocity = (player_reference.position - position).normalized() * speed

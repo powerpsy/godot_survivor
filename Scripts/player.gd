@@ -8,7 +8,15 @@ var health: float = 100:
 		health = value
 		%Health.value = value
 
+var nearest_ennemy : CharacterBody2D
+var nearest_ennemy_distance : float = INF
+
 func _physics_process(delta):
+	if nearest_ennemy:
+		nearest_ennemy_distance = nearest_ennemy.separation
+	else:
+		nearest_ennemy_distance = INF
+	
 	velocity = Input.get_vector("left","right","up","down") * speed
 	if velocity.x > 0:
 		motion.x = min(motion.x + acc, speed)

@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=4 uid="uid://brjvgkh7f0461"]
 
-[ext_resource type="PackedScene" uid="uid://bytik7vxy8glv" path="res://player.tscn" id="1_1830k"]
-[ext_resource type="Script" path="res://test_scene.gd" id="1_f10fi"]
-[ext_resource type="PackedScene" uid="uid://bedmfbwlbe7hr" path="res://spawner.tscn" id="2_0o2h1"]
-[ext_resource type="Texture2D" uid="uid://d25of4r14qn0o" path="res://Data/Tileset.png" id="2_0qtbp"]
-[ext_resource type="Texture2D" uid="uid://cqfymhthin8gm" path="res://Data/Decorations.png" id="3_pwk0d"]
+[ext_resource type="Script" path="res://Scripts/test_scene.gd" id="1_y3ual"]
+[ext_resource type="Texture2D" uid="uid://d25of4r14qn0o" path="res://Data/Tileset.png" id="2_jltf8"]
+[ext_resource type="Texture2D" uid="uid://cqfymhthin8gm" path="res://Data/Decorations.png" id="3_irkb1"]
+[ext_resource type="PackedScene" uid="uid://bedmfbwlbe7hr" path="res://Scenes/spawner.tscn" id="4_0twki"]
+[ext_resource type="PackedScene" uid="uid://bytik7vxy8glv" path="res://Scenes/player.tscn" id="5_anfuc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ip6uu"]
-texture = ExtResource("2_0qtbp")
+texture = ExtResource("2_jltf8")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -105,7 +105,7 @@ texture = ExtResource("2_0qtbp")
 sources/0 = SubResource("TileSetAtlasSource_ip6uu")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nfmhj"]
-texture = ExtResource("3_pwk0d")
+texture = ExtResource("3_irkb1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -316,7 +316,7 @@ texture = ExtResource("3_pwk0d")
 sources/1 = SubResource("TileSetAtlasSource_nfmhj")
 
 [node name="TestScene" type="Node2D"]
-script = ExtResource("1_f10fi")
+script = ExtResource("1_y3ual")
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
 repeat_size = Vector2(1280, 720)
@@ -330,8 +330,8 @@ tile_set = SubResource("TileSet_2dsus")
 tile_map_data = PackedByteArray("AAAWAAQAAQAOAAAAAAAWAAUAAQAOAAEAAAAXAAQAAQAPAAAAAAAXAAUAAQAPAAEAAAApAAwAAQAOAAAAAAApAA0AAQAOAAEAAAAqAAwAAQAPAAAAAAAqAA0AAQAPAAEAAABAACYAAQAOAAAAAABAACcAAQAOAAEAAABBACYAAQAPAAAAAABBACcAAQAPAAEAAAAJACQAAQACAAQAAAAJACUAAQACAAUAAAAKACQAAQADAAQAAAAKACUAAQADAAUAAAAhAA0AAQACAAQAAAAhAA4AAQACAAUAAAAiAA0AAQADAAQAAAAiAA4AAQADAAUAAAA4AAkAAQACAAQAAAA4AAoAAQACAAUAAAA5AAkAAQADAAQAAAA5AAoAAQADAAUAAAAdACkAAQAEAAYAAAAdACoAAQAEAAcAAAAeACkAAQAFAAYAAAAeACoAAQAFAAcAAAAoAB0AAQAEAAYAAAAoAB4AAQAEAAcAAAApAB0AAQAFAAYAAAApAB4AAQAFAAcAAABJAAUAAQAEAAYAAABJAAYAAQAEAAcAAABKAAUAAQAFAAYAAABKAAYAAQAFAAcAAAA=")
 tile_set = SubResource("TileSet_xitdq")
 
-[node name="Spawner" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_0o2h1")]
+[node name="Spawner" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_0twki")]
 player = NodePath("../Player")
 
-[node name="Player" parent="." instance=ExtResource("1_1830k")]
+[node name="Player" parent="." instance=ExtResource("5_anfuc")]
 position = Vector2(649, 360)

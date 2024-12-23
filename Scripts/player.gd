@@ -24,17 +24,13 @@ func _physics_process(delta):
 	else:
 		motion.y = lerp(motion.y, 0.0, 0.2)
 	
-	
-	print(motion)
 	move_and_collide(motion * delta)
 
 func take_damage(amount):
 	health -= amount
-	print(amount)
 
 func _on_self_damage_body_entered(body):
 	take_damage(body.damage)
-
 
 func _on_timer_timeout():
 	%Collision.set_deferred("disabled", true)

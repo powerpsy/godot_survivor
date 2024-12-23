@@ -1,13 +1,14 @@
 [gd_scene load_steps=9 format=3 uid="uid://bedmfbwlbe7hr"]
 
-[ext_resource type="Script" path="res://spawner.gd" id="1_juo3a"]
-[ext_resource type="PackedScene" uid="uid://vxy7pga1lm8r" path="res://ennemy.tscn" id="2_qvk4k"]
-[ext_resource type="Script" path="res://EnnemyType.gd" id="3_gdoyb"]
-[ext_resource type="Resource" uid="uid://dqlknw7vm2l06" path="res://Resources/Bat.tres" id="4_dra1o"]
-[ext_resource type="Resource" uid="uid://cu6ubhnhylsi" path="res://Resources/Blob.tres" id="5_tqw5b"]
-[ext_resource type="Resource" uid="uid://cvlvd3yw4jc6o" path="res://Resources/Mask.tres" id="6_8ktbt"]
-[ext_resource type="Resource" uid="uid://rcfwcu1evhmp" path="res://Resources/Snake.tres" id="7_2wqq1"]
-[ext_resource type="Resource" uid="uid://d32pc2bosmago" path="res://Resources/Toad.tres" id="8_byup4"]
+[ext_resource type="Script" path="res://Scripts/spawner.gd" id="1_juo3a"]
+[ext_resource type="PackedScene" uid="uid://vxy7pga1lm8r" path="res://Scenes/ennemy.tscn" id="2_qvk4k"]
+[ext_resource type="Script" path="res://Scripts/EnnemyType.gd" id="3_gdoyb"]
+[ext_resource type="Resource" uid="uid://dqlknw7vm2l06" path="res://Resources/Ennemies/Bat.tres" id="4_dra1o"]
+[ext_resource type="Resource" uid="uid://cu6ubhnhylsi" path="res://Resources/Ennemies/Blob.tres" id="5_tqw5b"]
+[ext_resource type="Resource" uid="uid://cvlvd3yw4jc6o" path="res://Resources/Ennemies/Mask.tres" id="6_8ktbt"]
+[ext_resource type="Resource" uid="uid://rcfwcu1evhmp" path="res://Resources/Ennemies/Snake.tres" id="7_2wqq1"]
+[ext_resource type="Resource" uid="uid://d32pc2bosmago" path="res://Resources/Ennemies/Toad.tres" id="8_byup4"]
+
 
 [node name="Spawner" type="Node2D"]
 script = ExtResource("1_juo3a")

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Godot_Survivor"
-run/main_scene="res://test_scene.tscn"
+run/main_scene="res://Scenes/test_scene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -27,8 +27,10 @@ project/assembly_name="Godot_Survivor"
 [file_customization]
 
 folder_colors={
-"res://Resources/": "yellow",
-"res://Shaders/": "orange"
+"res://Resources/": "green",
+"res://Scenes/": "yellow",
+"res://Scripts/": "orange",
+"res://Shaders/": "red"
 }
 
 [input]

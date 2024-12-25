@@ -9,7 +9,6 @@
 [ext_resource type="Resource" uid="uid://rcfwcu1evhmp" path="res://Resources/Ennemies/Snake.tres" id="7_2wqq1"]
 [ext_resource type="Resource" uid="uid://d32pc2bosmago" path="res://Resources/Ennemies/Toad.tres" id="8_byup4"]
 
-
 [node name="Spawner" type="Node2D"]
 script = ExtResource("1_juo3a")
 ennemy = ExtResource("2_qvk4k")

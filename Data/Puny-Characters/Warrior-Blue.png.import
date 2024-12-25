@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcpp0jkrq7ivh"
-path="res://.godot/imported/skull_blue.png-2f63a04ea10561a2242c4c78372dde52.ctex"
+uid="uid://nhba8lwhwcfg"
+path="res://.godot/imported/Warrior-Blue.png-b0849c443b1634aca89f30145a66f70a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/skull_blue.png"
-dest_files=["res://.godot/imported/skull_blue.png-2f63a04ea10561a2242c4c78372dde52.ctex"]
+source_file="res://Data/Puny-Characters/Warrior-Blue.png"
+dest_files=["res://.godot/imported/Warrior-Blue.png-b0849c443b1634aca89f30145a66f70a.ctex"]
 
 [params]
 

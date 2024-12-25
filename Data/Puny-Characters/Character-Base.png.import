@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://j6pr757wwjld"
-path="res://.godot/imported/Orc-Soldier-Cyan.png-ed1484a145a126ed4e05886369fb83c2.ctex"
+uid="uid://mi2h31mycdp6"
+path="res://.godot/imported/Character-Base.png-a712d15d4a9b4b89f99ebefd47eb8d48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Orc-Soldier-Cyan.png"
-dest_files=["res://.godot/imported/Orc-Soldier-Cyan.png-ed1484a145a126ed4e05886369fb83c2.ctex"]
+source_file="res://Data/Puny-Characters/Character-Base.png"
+dest_files=["res://.godot/imported/Character-Base.png-a712d15d4a9b4b89f99ebefd47eb8d48.ctex"]
 
 [params]
 

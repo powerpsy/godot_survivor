@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5yoaq4st1vso"
-path="res://.godot/imported/Mage-Red.png-f99bbc3347fa62fe4d08c6b7f0e63ed1.ctex"
+uid="uid://fxo0ifmjy85i"
+path="res://.godot/imported/Tree.png-fbb9882c8c6fce9026ed931b1b3e435f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Mage-Red.png"
-dest_files=["res://.godot/imported/Mage-Red.png-f99bbc3347fa62fe4d08c6b7f0e63ed1.ctex"]
+source_file="res://Data/Puny-Characters/Environment/Tree.png"
+dest_files=["res://.godot/imported/Tree.png-fbb9882c8c6fce9026ed931b1b3e435f.ctex"]
 
 [params]
 

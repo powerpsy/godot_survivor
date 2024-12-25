@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crrhb2f7c3bxj"
-path="res://.godot/imported/Human-Soldier-Red.png-0b20135e04b5538b4eaf9d10bad7cbfb.ctex"
+uid="uid://dqmg4ptyn67g2"
+path="res://.godot/imported/stella.png-399cf08cff7b96cb3cd769bc0c830b34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Human-Soldier-Red.png"
-dest_files=["res://.godot/imported/Human-Soldier-Red.png-0b20135e04b5538b4eaf9d10bad7cbfb.ctex"]
+source_file="res://Data/stella.png"
+dest_files=["res://.godot/imported/stella.png-399cf08cff7b96cb3cd769bc0c830b34.ctex"]
 
 [params]
 

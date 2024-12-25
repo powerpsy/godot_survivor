@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh7j00763bw0g"
-path="res://.godot/imported/Soldier-Blue.png-120cc51f23dee30796ad77156a3a8c27.ctex"
+uid="uid://dt265hjuw2a4e"
+path="res://.godot/imported/Orc-Peon-Cyan.png-44666825441407432a3a37e60c3880b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Soldier-Blue.png"
-dest_files=["res://.godot/imported/Soldier-Blue.png-120cc51f23dee30796ad77156a3a8c27.ctex"]
+source_file="res://Data/Puny-Characters/Orc-Peon-Cyan.png"
+dest_files=["res://.godot/imported/Orc-Peon-Cyan.png-44666825441407432a3a37e60c3880b7.ctex"]
 
 [params]
 

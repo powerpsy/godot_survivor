@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8kshorbbitbm"
-path="res://.godot/imported/Archer-Green.png-e2a587d45f761128670785c6025723b2.ctex"
+uid="uid://cccs2kkya2gmj"
+path="res://.godot/imported/Slime.png-8905b7edb8f3ed883f50f0c263853583.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Archer-Green.png"
-dest_files=["res://.godot/imported/Archer-Green.png-e2a587d45f761128670785c6025723b2.ctex"]
+source_file="res://Data/Puny-Characters/Slime.png"
+dest_files=["res://.godot/imported/Slime.png-8905b7edb8f3ed883f50f0c263853583.ctex"]
 
 [params]
 

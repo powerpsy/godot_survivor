@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh7xau734l6is"
-path="res://.godot/imported/Orc-Soldier-Red.png-9bcaebd1d7f2840c56eecd22a1a36ef5.ctex"
+uid="uid://4n81bhwh5a2g"
+path="res://.godot/imported/Mage-Cyan.png-99e5d47a20d890b46f61a87710e571b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Orc-Soldier-Red.png"
-dest_files=["res://.godot/imported/Orc-Soldier-Red.png-9bcaebd1d7f2840c56eecd22a1a36ef5.ctex"]
+source_file="res://Data/Puny-Characters/Mage-Cyan.png"
+dest_files=["res://.godot/imported/Mage-Cyan.png-99e5d47a20d890b46f61a87710e571b4.ctex"]
 
 [params]
 

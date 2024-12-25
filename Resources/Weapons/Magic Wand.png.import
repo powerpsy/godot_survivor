@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bp5u4ucwes022"
-path="res://.godot/imported/Orc-Peon-Red.png-f1e81aabc5917183c25d5d04a8246111.ctex"
+uid="uid://c0fji77cy8jan"
+path="res://.godot/imported/Magic Wand.png-0b7ef7effe40b5fdf342e0186fa85559.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Orc-Peon-Red.png"
-dest_files=["res://.godot/imported/Orc-Peon-Red.png-f1e81aabc5917183c25d5d04a8246111.ctex"]
+source_file="res://Resources/Weapons/Magic Wand.png"
+dest_files=["res://.godot/imported/Magic Wand.png-0b7ef7effe40b5fdf342e0186fa85559.ctex"]
 
 [params]
 

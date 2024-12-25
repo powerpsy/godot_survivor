@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dt265hjuw2a4e"
-path="res://.godot/imported/Orc-Peon-Cyan.png-90e9370764ee59bcc71c9dde23ae062d.ctex"
+uid="uid://c2ce2hp2g8tnd"
+path="res://.godot/imported/Warrior-Red.png-a1bd9f72a9cb04ec4bb870a59bf177e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Orc-Peon-Cyan.png"
-dest_files=["res://.godot/imported/Orc-Peon-Cyan.png-90e9370764ee59bcc71c9dde23ae062d.ctex"]
+source_file="res://Data/Puny-Characters/Warrior-Red.png"
+dest_files=["res://.godot/imported/Warrior-Red.png-a1bd9f72a9cb04ec4bb870a59bf177e1.ctex"]
 
 [params]
 

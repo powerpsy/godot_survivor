@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbc4poaayskxw"
-path="res://.godot/imported/Orc-Grunt.png-88a3f70f04eca0ec90ad07ebbb87080d.ctex"
+uid="uid://cdj8al2sdmnbq"
+path="res://.godot/imported/Grass2.png-8acf47637dff5bc3898bddd99142d68c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Orc-Grunt.png"
-dest_files=["res://.godot/imported/Orc-Grunt.png-88a3f70f04eca0ec90ad07ebbb87080d.ctex"]
+source_file="res://Data/Puny-Characters/Environment/Grass2.png"
+dest_files=["res://.godot/imported/Grass2.png-8acf47637dff5bc3898bddd99142d68c.ctex"]
 
 [params]
 

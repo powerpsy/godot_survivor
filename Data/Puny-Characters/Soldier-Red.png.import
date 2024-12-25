@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhgj1du5yqouy"
-path="res://.godot/imported/Soldier-Yellow.png-3ac20bdc800826570a3af2c82193b6f6.ctex"
+uid="uid://w5dudhnibuik"
+path="res://.godot/imported/Soldier-Red.png-38ac00e20e2b6990b8c7e7a1b52c3b0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Soldier-Yellow.png"
-dest_files=["res://.godot/imported/Soldier-Yellow.png-3ac20bdc800826570a3af2c82193b6f6.ctex"]
+source_file="res://Data/Puny-Characters/Soldier-Red.png"
+dest_files=["res://.godot/imported/Soldier-Red.png-38ac00e20e2b6990b8c7e7a1b52c3b0c.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d174aulc6855o"
-path="res://.godot/imported/Dirt.png-02bec621b756574e40722d311cf6afa7.ctex"
+uid="uid://djswb5cyd0rk4"
+path="res://.godot/imported/Archer-Purple.png-cc335e40429bd8d8cc1f6f6aaaf95d87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Environment/Dirt.png"
-dest_files=["res://.godot/imported/Dirt.png-02bec621b756574e40722d311cf6afa7.ctex"]
+source_file="res://Data/Puny-Characters/Archer-Purple.png"
+dest_files=["res://.godot/imported/Archer-Purple.png-cc335e40429bd8d8cc1f6f6aaaf95d87.ctex"]
 
 [params]
 

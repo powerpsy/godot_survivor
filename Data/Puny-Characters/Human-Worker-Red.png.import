@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cccs2kkya2gmj"
-path="res://.godot/imported/Slime.png-278f5b3b1e76cfa979ab09d218f4e562.ctex"
+uid="uid://bco7je70t2i0i"
+path="res://.godot/imported/Human-Worker-Red.png-385b7bd591033aa6e6aa9429ef2fe70f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Slime.png"
-dest_files=["res://.godot/imported/Slime.png-278f5b3b1e76cfa979ab09d218f4e562.ctex"]
+source_file="res://Data/Puny-Characters/Human-Worker-Red.png"
+dest_files=["res://.godot/imported/Human-Worker-Red.png-385b7bd591033aa6e6aa9429ef2fe70f.ctex"]
 
 [params]
 

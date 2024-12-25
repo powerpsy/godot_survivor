@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mi2h31mycdp6"
-path="res://.godot/imported/Character-Base.png-a45a5c93cd87bd904c144d21fd0ced1e.ctex"
+uid="uid://btplf46qucpkp"
+path="res://.godot/imported/Human-Soldier-Cyan.png-42d24b494f03a1182e771c435a3f4acf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Character-Base.png"
-dest_files=["res://.godot/imported/Character-Base.png-a45a5c93cd87bd904c144d21fd0ced1e.ctex"]
+source_file="res://Data/Puny-Characters/Human-Soldier-Cyan.png"
+dest_files=["res://.godot/imported/Human-Soldier-Cyan.png-42d24b494f03a1182e771c435a3f4acf.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clh1lpf8nlfcc"
-path="res://.godot/imported/skull.png-c630a2e24ddcc4eca9da5974768fcec7.ctex"
+uid="uid://bp5u4ucwes022"
+path="res://.godot/imported/Orc-Peon-Red.png-d71c370db8b186eb9ef1bb6f596ac0d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/skull.png"
-dest_files=["res://.godot/imported/skull.png-c630a2e24ddcc4eca9da5974768fcec7.ctex"]
+source_file="res://Data/Puny-Characters/Orc-Peon-Red.png"
+dest_files=["res://.godot/imported/Orc-Peon-Red.png-d71c370db8b186eb9ef1bb6f596ac0d6.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0fji77cy8jan"
-path="res://.godot/imported/Magic Wand.png-995ae9b6d39b175d9c2aecf07500402b.ctex"
+uid="uid://ca2fkya68qcqf"
+path="res://.godot/imported/Human-Worker-Cyan.png-9fbe8123b137190cb4c982ab38727e9e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Data/Magic Wand.png"
-dest_files=["res://.godot/imported/Magic Wand.png-995ae9b6d39b175d9c2aecf07500402b.ctex"]
+source_file="res://Data/Puny-Characters/Human-Worker-Cyan.png"
+dest_files=["res://.godot/imported/Human-Worker-Cyan.png-9fbe8123b137190cb4c982ab38727e9e.ctex"]
 
 [params]
 

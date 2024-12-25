@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btplf46qucpkp"
-path="res://.godot/imported/Human-Soldier-Cyan.png-a098f8774cc3b3fcc9052e278eea3c2e.ctex"
+uid="uid://dbc4poaayskxw"
+path="res://.godot/imported/Orc-Grunt.png-89e66fd59e60edfc2c4f27ae140caab7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Human-Soldier-Cyan.png"
-dest_files=["res://.godot/imported/Human-Soldier-Cyan.png-a098f8774cc3b3fcc9052e278eea3c2e.ctex"]
+source_file="res://Data/Puny-Characters/Orc-Grunt.png"
+dest_files=["res://.godot/imported/Orc-Grunt.png-89e66fd59e60edfc2c4f27ae140caab7.ctex"]
 
 [params]
 

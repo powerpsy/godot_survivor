@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca2fkya68qcqf"
-path="res://.godot/imported/Human-Worker-Cyan.png-a41fb8cbf7e1e06d33e4609357f85c80.ctex"
+uid="uid://bcpp0jkrq7ivh"
+path="res://.godot/imported/skull_blue.png-c1cc83909df4516d56dd645ae375f3f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Puny-Characters/Human-Worker-Cyan.png"
-dest_files=["res://.godot/imported/Human-Worker-Cyan.png-a41fb8cbf7e1e06d33e4609357f85c80.ctex"]
+source_file="res://Resources/Pickups/skull_blue.png"
+dest_files=["res://.godot/imported/skull_blue.png-c1cc83909df4516d56dd645ae375f3f4.ctex"]
 
 [params]
 

@@ -20,6 +20,7 @@ var level : int = 1:
 	set(value):
 		level = value
 		%Level.text = "Level " + str(value)
+		%Options.show_option()
 		
 		%XP.max_value = %XP.max_value + 10 * level
 
@@ -43,7 +44,7 @@ func _physics_process(delta):
 		motion.y = max(motion.y - acceleration, -speed)
 	else:
 		motion.y = lerp(motion.y, 0.0, 0.2)
-	
+		
 	move_and_collide(motion * delta)
 	check_XP()
 

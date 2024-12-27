@@ -12,6 +12,5 @@ func _on_body_entered(body):
 		body.take_damage(damage)
 		body.knockback += direction * 90
 
-
 func _on_screen_exited():
 	queue_free()

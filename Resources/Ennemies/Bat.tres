@@ -2,14 +2,14 @@
 
 [ext_resource type="Script" path="res://Scripts/EnnemyType.gd" id="1_1x5ve"]
 [ext_resource type="Script" path="res://Scripts/PickupResource.gd" id="1_num6t"]
-[ext_resource type="Texture2D" uid="uid://s868pqvbrt1k" path="res://Data/32x32 single battlers/16 v1.png" id="2_vi8gl"]
 [ext_resource type="Resource" uid="uid://dv11w3t7e6sxl" path="res://Resources/Pickups/gem_blue.tres" id="2_wlnfi"]
 [ext_resource type="Resource" uid="uid://bus1aayij3xcm" path="res://Resources/Pickups/gem_green.tres" id="3_j2oko"]
+[ext_resource type="Texture2D" uid="uid://bdlgqolffxq41" path="res://Resources/Ennemies/gfx/Bat.png" id="5_ivkt2"]
 
 [resource]
 script = ExtResource("1_1x5ve")
 title = "Bat"
-texture = ExtResource("2_vi8gl")
+texture = ExtResource("5_ivkt2")
 health = 3.0
 damage = 1.0
 drops = Array[ExtResource("1_num6t")]([ExtResource("2_wlnfi"), ExtResource("3_j2oko")])

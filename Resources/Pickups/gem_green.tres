@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Gem" load_steps=3 format=3 uid="uid://bus1aayij3xcm"]
 
-[ext_resource type="Texture2D" uid="uid://cbkjkelwtdd8u" path="res://Resources/Pickups/skull_green.png" id="1_j4vpv"]
+[ext_resource type="Texture2D" uid="uid://cbkjkelwtdd8u" path="res://Resources/Pickups/gfx/skull_green.png" id="1_j4vpv"]
 [ext_resource type="Script" path="res://Scripts/Gem.gd" id="2_u5r8v"]
 
 [resource]

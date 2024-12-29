@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://c0xp34iq765q4"]
 
 [ext_resource type="Script" path="res://Scripts/PassiveItem.gd" id="1_ewq1j"]
-[ext_resource type="Texture2D" uid="uid://bouf51ilb0jtp" path="res://Resources/Passive Items/Area.png" id="2_hh6do"]
+[ext_resource type="Texture2D" uid="uid://bouf51ilb0jtp" path="res://Resources/Passive Items/gfx/Area.png" id="2_hh6do"]
 [ext_resource type="Script" path="res://Scripts/Statistics.gd" id="3_gjt2f"]
 
 [sub_resource type="Resource" id="Resource_irnw2"]

@@ -120,6 +120,9 @@ layout_mode = 2
 [node name="PassiveSlot3" parent="UI/PassiveItems" instance=ExtResource("6_cu7ce")]
 layout_mode = 2
 
+[node name="PassiveSlot4" parent="UI/PassiveItems" instance=ExtResource("6_cu7ce")]
+layout_mode = 2
+
 [node name="XP" type="TextureProgressBar" parent="UI"]
 unique_name_in_owner = true
 offset_left = -1.0
@@ -138,7 +141,7 @@ offset_left = 1186.0
 offset_top = 8.0
 offset_right = 1281.0
 offset_bottom = 31.0
-text = "Level 9999"
+text = "Level 1"
 
 [node name="Options" type="VBoxContainer" parent="UI" node_paths=PackedStringArray("weapons", "passive_items", "particles", "panel")]
 unique_name_in_owner = true

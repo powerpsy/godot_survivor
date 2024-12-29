@@ -3,13 +3,13 @@
 [ext_resource type="Script" path="res://Scripts/EnnemyType.gd" id="1_vlndo"]
 [ext_resource type="Script" path="res://Scripts/PickupResource.gd" id="1_wac4d"]
 [ext_resource type="Resource" uid="uid://dv11w3t7e6sxl" path="res://Resources/Pickups/gem_blue.tres" id="2_tdeew"]
-[ext_resource type="Texture2D" uid="uid://blepgh8og7llg" path="res://Data/32x32 single battlers/003.png" id="2_wicyc"]
 [ext_resource type="Resource" uid="uid://bus1aayij3xcm" path="res://Resources/Pickups/gem_green.tres" id="3_amo40"]
+[ext_resource type="Texture2D" uid="uid://bk2ti53n1iipa" path="res://Resources/Ennemies/gfx/Blob.png" id="5_csb7i"]
 
 [resource]
 script = ExtResource("1_vlndo")
 title = "Blob"
-texture = ExtResource("2_wicyc")
+texture = ExtResource("5_csb7i")
 health = 5.0
 damage = 6.0
 drops = Array[ExtResource("1_wac4d")]([ExtResource("2_tdeew"), ExtResource("3_amo40")])

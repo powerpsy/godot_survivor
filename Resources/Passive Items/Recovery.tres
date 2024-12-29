@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://q7fqm0kio41x"]
+
+[ext_resource type="Script" path="res://Scripts/PassiveItem.gd" id="1_pxcf5"]
+[ext_resource type="Texture2D" uid="uid://cddc57dcqrjfh" path="res://Resources/Passive Items/Recovery.png" id="2_qp371"]
+[ext_resource type="Script" path="res://Scripts/Statistics.gd" id="3_busng"]
+
+[sub_resource type="Resource" id="Resource_lxcc7"]
+script = ExtResource("3_busng")
+description = "+0.1 Recovery"
+max_health = 0.0
+recovery = 0.1
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+
+[sub_resource type="Resource" id="Resource_3wd0w"]
+script = ExtResource("3_busng")
+description = "+0.1 Recovery"
+max_health = 0.0
+recovery = 0.1
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+
+[sub_resource type="Resource" id="Resource_fv78l"]
+script = ExtResource("3_busng")
+description = "+0.2 Recovery"
+max_health = 0.0
+recovery = 0.2
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+
+[resource]
+script = ExtResource("1_pxcf5")
+upgrades = Array[ExtResource("3_busng")]([SubResource("Resource_lxcc7"), SubResource("Resource_3wd0w"), SubResource("Resource_fv78l")])
+title = "Recovery"
+texture = ExtResource("2_qp371")

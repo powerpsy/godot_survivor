@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Ennemy" load_steps=5 format=3 uid="uid://d32pc2bosmago"]
 
-[ext_resource type="Script" path="res://PickupResource.gd" id="1_m0oni"]
+[ext_resource type="Script" path="res://Scripts/PickupResource.gd" id="1_m0oni"]
 [ext_resource type="Script" path="res://Scripts/EnnemyType.gd" id="1_ueid2"]
 [ext_resource type="Texture2D" uid="uid://1pluvd8ecs5g" path="res://Data/32x32 single battlers/012.png" id="2_0fvrq"]
 [ext_resource type="Resource" uid="uid://bus1aayij3xcm" path="res://Resources/Pickups/gem_green.tres" id="3_5acni"]

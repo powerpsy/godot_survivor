@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://bh3ka2jg4v24j"]
+
+[ext_resource type="Script" path="res://Scripts/PassiveItem.gd" id="1_kbptv"]
+[ext_resource type="Texture2D" uid="uid://csfvmharws65l" path="res://Resources/Passive Items/Movement Speed.png" id="2_dtxb6"]
+[ext_resource type="Script" path="res://Scripts/Statistics.gd" id="3_smytp"]
+
+[sub_resource type="Resource" id="Resource_rsngd"]
+script = ExtResource("3_smytp")
+description = "+50 Movement speed"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 50.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+
+[sub_resource type="Resource" id="Resource_mooqi"]
+script = ExtResource("3_smytp")
+description = "+50 Movelent speed"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 50.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+
+[sub_resource type="Resource" id="Resource_qwbf4"]
+script = ExtResource("3_smytp")
+description = "+50 Movement speed"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 50.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+
+[resource]
+script = ExtResource("1_kbptv")
+upgrades = Array[ExtResource("3_smytp")]([SubResource("Resource_rsngd"), SubResource("Resource_mooqi"), SubResource("Resource_qwbf4")])
+title = "Movement Speed"
+texture = ExtResource("2_dtxb6")

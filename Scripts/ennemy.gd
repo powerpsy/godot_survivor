@@ -3,7 +3,8 @@ extends CharacterBody2D
 @export var player_reference : CharacterBody2D
 var damage_popup_node = preload("res://Scenes/damage.tscn")
 var direction : Vector2
-var speed : float = 300
+var speed : float = 200
+const knock_back = 100
 var damage : float
 var knockback : Vector2
 var separation : float
@@ -48,7 +49,7 @@ func knockback_update(delta):
 	velocity += knockback
 	var collider = move_and_collide(velocity * delta)
 	if collider:
-		collider.get_collider().knockback = (collider.get_collider().global_position - global_position).normalized() * 50
+		collider.get_collider().knockback = (collider.get_collider().global_position - global_position).normalized() * knock_back
 
 func damage_popup(amount):
 	var popup = damage_popup_node.instantiate()

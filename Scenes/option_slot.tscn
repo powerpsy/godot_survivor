@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dm3p8pnclthqk"]
 
-[ext_resource type="Texture2D" uid="uid://c0fji77cy8jan" path="res://Resources/Weapons/Magic Wand.png" id="1_yw6ij"]
+[ext_resource type="Texture2D" uid="uid://dpugdx40i8umu" path="res://Resources/Weapons/Framed Magic Wand.png" id="1_h2oo3"]
 [ext_resource type="Script" path="res://Scripts/option_slot.gd" id="2_knpgc"]
 [ext_resource type="Texture2D" uid="uid://bigb63pgja6e6" path="res://Resources/UI/GUI1.png" id="3_o1d75"]
 
@@ -9,7 +9,7 @@ custom_minimum_size = Vector2(730, 80)
 offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 1
-texture_normal = ExtResource("1_yw6ij")
+texture_normal = ExtResource("1_h2oo3")
 ignore_texture_size = true
 stretch_mode = 4
 script = ExtResource("2_knpgc")

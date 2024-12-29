@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SingleShot" load_steps=5 format=3 uid="uid://c2xiw5fcvswu3"]
+
+[ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/projectile.tscn" id="1_wpctm"]
+[ext_resource type="Script" path="res://Scripts/SingleShot.gd" id="2_7gkc3"]
+[ext_resource type="Texture2D" uid="uid://bj4ux4swxael6" path="res://Resources/Weapons/Holy wand.png" id="3_taf1r"]
+[ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="4_anjww"]
+
+[resource]
+script = ExtResource("2_7gkc3")
+damage = 10.0
+cooldown = 0.1
+speed = 500.0
+projectile_node = ExtResource("1_wpctm")
+upgrades = Array[ExtResource("4_anjww")]([])
+title = "Holy wand"
+texture = ExtResource("3_taf1r")

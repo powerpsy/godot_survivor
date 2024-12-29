@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Ennemy" load_steps=6 format=3 uid="uid://rcfwcu1evhmp"]
 
 [ext_resource type="Script" path="res://Scripts/EnnemyType.gd" id="1_upafw"]
-[ext_resource type="Script" path="res://PickupResource.gd" id="1_v2erd"]
+[ext_resource type="Script" path="res://Scripts/PickupResource.gd" id="1_v2erd"]
 [ext_resource type="Texture2D" uid="uid://6amuu8fiv1q" path="res://Data/32x32 single battlers/09 v1.png" id="2_e0kda"]
 [ext_resource type="Resource" uid="uid://dv11w3t7e6sxl" path="res://Resources/Pickups/gem_blue.tres" id="2_gqvxx"]
 [ext_resource type="Resource" uid="uid://bus1aayij3xcm" path="res://Resources/Pickups/gem_green.tres" id="3_ngqwj"]

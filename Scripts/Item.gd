@@ -5,3 +5,6 @@ class_name Item
 @export var texture : Texture2D
 
 var level = 1
+
+func upgrade_item():
+	pass

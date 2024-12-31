@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://Scripts/SingleShot.gd" id="4_2hshj"]
 [ext_resource type="Texture2D" uid="uid://dpugdx40i8umu" path="res://Resources/Weapons/gfx/Magic wand.png" id="5_uvh3i"]
 [ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="6_e652v"]
-[ext_resource type="Script" path="res://Scripts/ProjectyleUpgrade.gd" id="7_yj4rl"]
+[ext_resource type="Script" path="res://Scripts/ProjectileUpgrade.gd" id="7_yj4rl"]
 
 [sub_resource type="Resource" id="Resource_qfkst"]
 script = ExtResource("7_yj4rl")
@@ -75,7 +75,7 @@ description = "0.1s Cooldown"
 script = ExtResource("4_2hshj")
 damage = 1.0
 cooldown = 0.5
-speed = 800.0
+speed = 500.0
 projectile_node = ExtResource("3_bu16r")
 upgrades = Array[ExtResource("6_e652v")]([SubResource("Resource_qfkst"), SubResource("Resource_r2hoa"), SubResource("Resource_66xao"), SubResource("Resource_vplyh"), SubResource("Resource_wq2mx"), SubResource("Resource_svb8v"), SubResource("Resource_kkytx"), SubResource("Resource_bcv1o"), SubResource("Resource_dlrju")])
 item_needed = ExtResource("2_mxekv")

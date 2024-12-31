@@ -6,7 +6,6 @@ var health: float = 100:
 	set(value):
 		health = max(value, 0)
 		%Health.value = value
-
 var movement_speed : float = 300
 var max_health : float = 120:
 	set(value):
@@ -22,10 +21,13 @@ var magnet : float = 0:
 		%Magnet.shape.radius = 100 + value
 var growth : float = 1
 
-
-
 var nearest_ennemy : CharacterBody2D
 var nearest_ennemy_distance : float = 300 + area
+
+var gold : int = 0:
+	set(value):
+		gold = value
+		%Gold.text = "Gold: " + str(value)
 
 var XP : int = 0:
 	set(value):
@@ -72,7 +74,14 @@ func check_XP():
 	if XP > %XP.max_value:
 		XP -= %XP.max_value
 		level += 1
+	%LevelXP.text = str(XP) + "/" + str(%XP.max_value)
 
 func _on_magnet_area_entered(area):
 	if area.has_method("follow"):
 		area.follow(self)
+
+func gain_gold(amount):
+	gold += amount
+
+func open_chest():
+	$UI/Chest.open()

@@ -15,7 +15,7 @@ func upgrade_item():
 		
 	if player_reference == null:
 		return
-		
+
 	var upgrade = upgrades[level - 1]
 	player_reference.max_health += upgrade.max_health
 	player_reference.recovery += upgrade.recovery
@@ -24,5 +24,5 @@ func upgrade_item():
 	player_reference.area += upgrade.area
 	player_reference.magnet += upgrade.magnet
 	player_reference.growth += upgrade.growth
-	
+
 	level += 1

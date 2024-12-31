@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bytik7vxy8glv"]
+[gd_scene load_steps=30 format=3 uid="uid://bytik7vxy8glv"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_l8yih"]
 [ext_resource type="Texture2D" uid="uid://c5hmj1cr8vqr2" path="res://Resources/UI/Star.png" id="2_aygry"]
@@ -11,6 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://nb3ar74enmt0" path="res://Resources/UI/Exp-progress.png" id="6_jv3fa"]
 [ext_resource type="Script" path="res://Scripts/options.gd" id="7_eieeo"]
 [ext_resource type="Resource" uid="uid://d20u7wmxf2wy4" path="res://Resources/Passive Items/Magnet.tres" id="7_n5ssb"]
+[ext_resource type="Resource" uid="uid://q7fqm0kio41x" path="res://Resources/Passive Items/Recovery.tres" id="10_vb2h2"]
+[ext_resource type="Texture2D" uid="uid://ckd3n740iesij" path="res://Resources/UI/Chests.png" id="12_nxhvd"]
+[ext_resource type="Script" path="res://Scripts/chest.gd" id="12_o1raq"]
 
 [sub_resource type="Gradient" id="Gradient_uhfxs"]
 interpolation_mode = 2
@@ -33,6 +36,69 @@ scale_min = 2.0
 scale_max = 3.0
 color_ramp = SubResource("GradientTexture1D_6mi0t")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kpk1"]
+atlas = ExtResource("12_nxhvd")
+region = Rect2(288, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6fef"]
+atlas = ExtResource("12_nxhvd")
+region = Rect2(352, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8y0rd"]
+atlas = ExtResource("12_nxhvd")
+region = Rect2(352, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1oe2"]
+atlas = ExtResource("12_nxhvd")
+region = Rect2(288, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sjtiy"]
+atlas = ExtResource("12_nxhvd")
+region = Rect2(352, 224, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mdcsb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kpk1")
+}],
+"loop": false,
+"name": &"idle_boss_chest",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c6fef")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8y0rd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1oe2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sjtiy")
+}],
+"loop": false,
+"name": &"open_boss_chest",
+"speed": 8.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_22i6x"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pjkjl"]
+bg_color = Color(0.721569, 0.435294, 0.313726, 1)
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.454902, 0.247059, 0.223529, 1)
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 1
+shadow_offset = Vector2(4, 4)
+
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3mjmv"]
 size = Vector2(64, 64)
 
@@ -49,6 +115,15 @@ script = ExtResource("1_l8yih")
 
 [node name="UI" type="CanvasLayer" parent="."]
 
+[node name="Gold" type="Label" parent="UI"]
+unique_name_in_owner = true
+offset_left = 32.0
+offset_top = 121.0
+offset_right = 204.0
+offset_bottom = 144.0
+text = "Gold: 0"
+horizontal_alignment = 2
+
 [node name="Particle" type="GPUParticles2D" parent="UI"]
 process_mode = 3
 visible = false
@@ -61,15 +136,23 @@ lifetime = 2.0
 [node name="Panel" type="NinePatchRect" parent="UI"]
 process_mode = 3
 visible = false
-offset_left = 142.0
-offset_top = 136.0
-offset_right = 1132.0
-offset_bottom = 670.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -495.0
+offset_top = -267.0
+offset_right = 495.0
+offset_bottom = 267.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("3_q36li")
 patch_margin_left = 6
 patch_margin_top = 6
 patch_margin_right = 6
 patch_margin_bottom = 6
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="UI/Panel"]
 layout_mode = 1
@@ -116,6 +199,7 @@ item = ExtResource("7_n5ssb")
 
 [node name="PassiveSlot2" parent="UI/PassiveItems" instance=ExtResource("6_cu7ce")]
 layout_mode = 2
+item = ExtResource("10_vb2h2")
 
 [node name="PassiveSlot3" parent="UI/PassiveItems" instance=ExtResource("6_cu7ce")]
 layout_mode = 2
@@ -125,23 +209,51 @@ layout_mode = 2
 
 [node name="XP" type="TextureProgressBar" parent="UI"]
 unique_name_in_owner = true
-offset_left = -1.0
-offset_right = 1280.0
-offset_bottom = 8.0
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -22.0
+grow_horizontal = 2
+grow_vertical = 0
 max_value = 10.0
 nine_patch_stretch = true
 texture_under = ExtResource("4_he36o")
 texture_over = ExtResource("5_krbfl")
 texture_progress = ExtResource("6_jv3fa")
+metadata/_edit_use_anchors_ = true
 
 [node name="Level" type="Label" parent="UI/XP"]
 unique_name_in_owner = true
-layout_mode = 0
-offset_left = 1186.0
-offset_top = 8.0
-offset_right = 1281.0
-offset_bottom = 31.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00868056
+anchor_top = 1.0
+anchor_right = 0.00868056
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 95.0
+grow_vertical = 0
 text = "Level 1"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="LevelXP" type="Label" parent="UI/XP"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.991319
+anchor_top = 1.0
+anchor_right = 0.991319
+anchor_bottom = 1.0
+offset_left = -83.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "0/0"
+horizontal_alignment = 2
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Options" type="VBoxContainer" parent="UI" node_paths=PackedStringArray("weapons", "passive_items", "particles", "panel")]
 unique_name_in_owner = true
@@ -162,6 +274,123 @@ weapons = NodePath("../Weapons")
 passive_items = NodePath("../PassiveItems")
 particles = NodePath("../Particle")
 panel = NodePath("../Panel")
+
+[node name="Chest" type="NinePatchRect" parent="UI"]
+process_mode = 3
+visible = false
+custom_minimum_size = Vector2(600, 400)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_q36li")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 5
+script = ExtResource("12_o1raq")
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="UI/Chest"]
+position = Vector2(300, 200)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_mdcsb")
+animation = &"open_boss_chest"
+autoplay = "idle_boss_chest"
+
+[node name="Open" type="Button" parent="UI/Chest"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -37.0
+offset_top = -72.0
+offset_right = 37.0
+offset_bottom = -29.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxEmpty_22i6x")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pjkjl")
+text = "Open"
+
+[node name="Close" type="Button" parent="UI/Chest"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -37.0
+offset_top = -72.0
+offset_right = 37.0
+offset_bottom = -29.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxEmpty_22i6x")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pjkjl")
+text = "Close"
+
+[node name="Rewards" type="Control" parent="UI/Chest"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/Chest/Rewards"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 158.0
+offset_right = 88.0
+offset_bottom = 198.0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextureRect2" type="TextureRect" parent="UI/Chest/Rewards"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 51.0
+offset_right = 164.0
+offset_bottom = 91.0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextureRect3" type="TextureRect" parent="UI/Chest/Rewards"]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 41.0
+offset_right = 320.0
+offset_bottom = 81.0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextureRect4" type="TextureRect" parent="UI/Chest/Rewards"]
+layout_mode = 0
+offset_left = 439.0
+offset_top = 48.0
+offset_right = 479.0
+offset_bottom = 88.0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextureRect5" type="TextureRect" parent="UI/Chest/Rewards"]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 161.0
+offset_right = 508.0
+offset_bottom = 201.0
+expand_mode = 1
+stretch_mode = 4
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = SubResource("PlaceholderTexture2D_3mjmv")
@@ -200,6 +429,8 @@ collision_mask = 4
 unique_name_in_owner = true
 shape = SubResource("CircleShape2D_qsdg0")
 
+[connection signal="pressed" from="UI/Chest/Open" to="UI/Chest" method="_on_open_pressed"]
+[connection signal="pressed" from="UI/Chest/Close" to="UI/Chest" method="_on_close_pressed"]
 [connection signal="body_entered" from="SelfDamage" to="." method="_on_self_damage_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="area_entered" from="Magnet" to="." method="_on_magnet_area_entered"]

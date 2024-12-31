@@ -38,7 +38,7 @@ func spawn(pos : Vector2, elite: bool = false):
 	ennemy_instance.player_reference = player
 	ennemy_instance.elite = elite
 	get_tree().current_scene.add_child(ennemy_instance)
-
+	
 func get_random_position() -> Vector2:
 	return player.position + distance * Vector2.RIGHT.rotated(randf_range(0,2 * PI))
 

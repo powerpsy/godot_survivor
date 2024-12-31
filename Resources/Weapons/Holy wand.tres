@@ -9,7 +9,7 @@
 script = ExtResource("2_7gkc3")
 damage = 10.0
 cooldown = 0.1
-speed = 500.0
+speed = 1000.0
 projectile_node = ExtResource("1_wpctm")
 upgrades = Array[ExtResource("4_anjww")]([])
 title = "Holy wand"

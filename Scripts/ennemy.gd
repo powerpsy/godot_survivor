@@ -32,6 +32,7 @@ var type : Ennemy:
 		damage = value.damage
 		health = value.health
 
+
 func _physics_process(delta):
 	check_separation(delta)
 	knockback_update(delta)
@@ -69,6 +70,8 @@ func drop_item():
 	if type.drops.size() == 0:
 		return
 	var item = type.drops.pick_random()
+	if elite:
+		item = load("res://Resources/Pickups/Chest.tres")
 	var item_to_drop = drop.instantiate()
 	
 	item_to_drop.type = item

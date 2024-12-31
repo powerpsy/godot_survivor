@@ -5,7 +5,6 @@ var speed : float = 200
 var damage : float = 1
 var source
 
-
 func _physics_process(delta):
 	position += direction * speed * delta
 

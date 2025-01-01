@@ -35,13 +35,10 @@ func set_reward():
 	var chance = randf()
 	if chance < 0.6:
 		upgrade_item(2,3)
-		print("rare")
 	elif chance < 0.90:
 		upgrade_item(1,4)
-		print("epic")
 	else:
 		upgrade_item(0,5)
-		print("legendary")
 
 func upgrade_item(start, end):
 	for index in range(start, end):

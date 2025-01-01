@@ -15,6 +15,10 @@ run/main_scene="res://Scenes/test_scene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SoundManager="*res://Scenes/sound_manager.tscn"
+
 [dotnet]
 
 project/assembly_name="Godot_Survivor"

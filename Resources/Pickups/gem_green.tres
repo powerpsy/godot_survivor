@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="Gem" load_steps=3 format=3 uid="uid://bus1aayij3xcm"]
+[gd_resource type="Resource" script_class="Gem" load_steps=4 format=3 uid="uid://bus1aayij3xcm"]
 
 [ext_resource type="Texture2D" uid="uid://cbkjkelwtdd8u" path="res://Resources/Pickups/gfx/Skull_green.png" id="1_j4vpv"]
 [ext_resource type="Script" path="res://Scripts/Gem.gd" id="2_u5r8v"]
+[ext_resource type="AudioStream" uid="uid://d03b35iy3v6i" path="res://Resources/Pickups/sfx/Pickup sound.wav" id="3_ey6i8"]
 
 [resource]
 script = ExtResource("2_u5r8v")
@@ -9,3 +10,4 @@ XP = 5.0
 title = "Green gem"
 icon = ExtResource("1_j4vpv")
 description = "Gain XP points"
+sound = ExtResource("3_ey6i8")

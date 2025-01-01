@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="Gold" load_steps=3 format=3 uid="uid://cvh17vldmyes7"]
+[gd_resource type="Resource" script_class="Gold" load_steps=4 format=3 uid="uid://cvh17vldmyes7"]
 
 [ext_resource type="Texture2D" uid="uid://ci07nvv7tg5qo" path="res://Resources/Pickups/gfx/Gold.png" id="1_5yxjq"]
 [ext_resource type="Script" path="res://Scripts/Gold.gd" id="2_272am"]
+[ext_resource type="AudioStream" uid="uid://d03b35iy3v6i" path="res://Resources/Pickups/sfx/Pickup sound.wav" id="3_bqgif"]
 
 [resource]
 script = ExtResource("2_272am")
@@ -9,3 +10,4 @@ gold = 5
 title = "Gold"
 icon = ExtResource("1_5yxjq")
 description = "+5 Gold"
+sound = ExtResource("3_bqgif")

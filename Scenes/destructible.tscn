@@ -1,0 +1,42 @@
+[gd_scene load_steps=11 format=3 uid="uid://b21oe80s20gvc"]
+
+[ext_resource type="Texture2D" uid="uid://4xcqn66sik4h" path="res://Resources/Pickups/gfx/Torch.png" id="1_e2etq"]
+[ext_resource type="Script" path="res://Scripts/destructible.gd" id="2_5hfnp"]
+[ext_resource type="Script" path="res://Scripts/PickupResource.gd" id="3_2smmi"]
+[ext_resource type="Resource" uid="uid://okilnwxytoe2" path="res://Resources/Pickups/heart.tres" id="4_6yar8"]
+[ext_resource type="Resource" uid="uid://c67v2v263gtq2" path="res://Resources/Pickups/rosary.tres" id="5_637rh"]
+[ext_resource type="Resource" uid="uid://be6khutienogw" path="res://Resources/Pickups/vacuum.tres" id="6_wg4ek"]
+[ext_resource type="Resource" uid="uid://cvh17vldmyes7" path="res://Resources/Pickups/gold.tres" id="7_hxhw3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mqajo"]
+radius = 6.0
+height = 32.0
+
+[sub_resource type="Gradient" id="Gradient_yealx"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_g1raf"]
+gradient = SubResource("Gradient_yealx")
+width = 512
+height = 512
+fill = 1
+fill_from = Vector2(0.508621, 0.491379)
+fill_to = Vector2(0.831897, 0.125)
+
+[node name="Destructible" type="Sprite2D"]
+texture = ExtResource("1_e2etq")
+hframes = 8
+script = ExtResource("2_5hfnp")
+drops = Array[ExtResource("3_2smmi")]([ExtResource("4_6yar8"), ExtResource("5_637rh"), ExtResource("6_wg4ek"), ExtResource("7_hxhw3")])
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 9)
+shape = SubResource("CapsuleShape2D_mqajo")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(1, 1, 0.254902, 1)
+texture = SubResource("GradientTexture2D_g1raf")

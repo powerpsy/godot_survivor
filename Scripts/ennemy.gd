@@ -32,6 +32,10 @@ var type : Ennemy:
 		damage = value.damage
 		health = value.health
 
+func _ready():
+	var tween = create_tween().set_loops()
+	tween.tween_property($Sprite2D,"rotation", deg_to_rad(5),randf_range(0.1, 0.5))
+	tween.tween_property($Sprite2D,"rotation", deg_to_rad(-5),randf_range(0.1, 0.5))
 
 func _physics_process(delta):
 	check_separation(delta)
@@ -79,4 +83,4 @@ func drop_item():
 	item_to_drop.player_reference = player_reference
 	
 	get_tree().current_scene.call_deferred("add_child", item_to_drop)
-	
+	queue_free()

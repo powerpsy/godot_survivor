@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bedmfbwlbe7hr"]
+[gd_scene load_steps=10 format=3 uid="uid://bedmfbwlbe7hr"]
 
 [ext_resource type="Script" path="res://Scripts/spawner.gd" id="1_juo3a"]
 [ext_resource type="PackedScene" uid="uid://vxy7pga1lm8r" path="res://Scenes/ennemy.tscn" id="2_qvk4k"]
+[ext_resource type="PackedScene" uid="uid://b21oe80s20gvc" path="res://Scenes/destructible.tscn" id="3_e0i4k"]
 [ext_resource type="Script" path="res://Scripts/EnnemyType.gd" id="3_gdoyb"]
 [ext_resource type="Resource" uid="uid://dqlknw7vm2l06" path="res://Resources/Ennemies/Bat.tres" id="4_dra1o"]
 [ext_resource type="Resource" uid="uid://cu6ubhnhylsi" path="res://Resources/Ennemies/Blob.tres" id="5_tqw5b"]
@@ -12,6 +13,7 @@
 [node name="Spawner" type="Node2D"]
 script = ExtResource("1_juo3a")
 ennemy = ExtResource("2_qvk4k")
+destructible = ExtResource("3_e0i4k")
 ennemy_types = Array[ExtResource("3_gdoyb")]([ExtResource("4_dra1o"), ExtResource("5_tqw5b"), ExtResource("6_8ktbt"), ExtResource("7_2wqq1"), ExtResource("8_byup4")])
 
 [node name="UI" type="CanvasLayer" parent="."]
@@ -49,6 +51,11 @@ autostart = true
 wait_time = 9.0
 autostart = true
 
+[node name="Destructible" type="Timer" parent="."]
+wait_time = 9.0
+autostart = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Pattern" to="." method="_on_pattern_timeout"]
 [connection signal="timeout" from="Elite" to="." method="_on_elite_timeout"]
+[connection signal="timeout" from="Destructible" to="." method="_on_destructible_timeout"]

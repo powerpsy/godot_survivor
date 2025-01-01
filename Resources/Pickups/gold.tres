@@ -1,10 +1,11 @@
 [gd_resource type="Resource" script_class="Gold" load_steps=3 format=3 uid="uid://cvh17vldmyes7"]
 
-[ext_resource type="Script" path="res://Scripts/Gold.gd" id="1_ebu35"]
-[ext_resource type="Texture2D" uid="uid://ci07nvv7tg5qo" path="res://Resources/Pickups/gfx/Gold.png" id="2_7jb4m"]
+[ext_resource type="Texture2D" uid="uid://ci07nvv7tg5qo" path="res://Resources/Pickups/gfx/Gold.png" id="1_5yxjq"]
+[ext_resource type="Script" path="res://Scripts/Gold.gd" id="2_272am"]
 
 [resource]
-script = ExtResource("1_ebu35")
+script = ExtResource("2_272am")
 gold = 5
 title = "Gold"
-texture = ExtResource("2_7jb4m")
+icon = ExtResource("1_5yxjq")
+description = "+5 Gold"

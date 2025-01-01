@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbkjkelwtdd8u"
-path="res://.godot/imported/Skull_green.png-be5d75ad48790a2ae47250590aee21fe.ctex"
+uid="uid://c2ii53rmvupcy"
+path="res://.godot/imported/Vacuum.png-e4d4965ae0b18478d3053e916d203a63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Pickups/gfx/Skull_green.png"
-dest_files=["res://.godot/imported/Skull_green.png-be5d75ad48790a2ae47250590aee21fe.ctex"]
+source_file="res://Resources/Pickups/gfx/Vacuum.png"
+dest_files=["res://.godot/imported/Vacuum.png-e4d4965ae0b18478d3053e916d203a63.ctex"]
 
 [params]
 

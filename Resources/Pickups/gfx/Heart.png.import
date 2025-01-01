@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbkjkelwtdd8u"
-path="res://.godot/imported/Skull_green.png-be5d75ad48790a2ae47250590aee21fe.ctex"
+uid="uid://dv2j3ibhe002c"
+path="res://.godot/imported/Heart.png-e207266c8bffc3bdd0a169bc8f501f91.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Pickups/gfx/Skull_green.png"
-dest_files=["res://.godot/imported/Skull_green.png-be5d75ad48790a2ae47250590aee21fe.ctex"]
+source_file="res://Resources/Pickups/gfx/Heart.png"
+dest_files=["res://.godot/imported/Heart.png-e207266c8bffc3bdd0a169bc8f501f91.ctex"]
 
 [params]
 

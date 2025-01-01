@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Health" load_steps=3 format=3 uid="uid://okilnwxytoe2"]
+
+[ext_resource type="Texture2D" uid="uid://dv2j3ibhe002c" path="res://Resources/Pickups/gfx/Heart.png" id="1_54x1i"]
+[ext_resource type="Script" path="res://Scripts/Health.gd" id="2_04fn5"]
+
+[resource]
+script = ExtResource("2_04fn5")
+amount = 20
+title = "Heart"
+icon = ExtResource("1_54x1i")
+description = "+20 Health"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PickupMagnet" load_steps=3 format=3 uid="uid://be6khutienogw"]
+
+[ext_resource type="Texture2D" uid="uid://c2ii53rmvupcy" path="res://Resources/Pickups/gfx/Vacuum.png" id="1_r3p7m"]
+[ext_resource type="Script" path="res://Scripts/Vacuum.gd" id="2_c3ets"]
+
+[resource]
+script = ExtResource("2_c3ets")
+title = "Vacuum"
+icon = ExtResource("1_r3p7m")
+description = "Attract all gems"

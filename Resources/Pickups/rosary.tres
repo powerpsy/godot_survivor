@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Rosary" load_steps=3 format=3 uid="uid://c67v2v263gtq2"]
+
+[ext_resource type="Texture2D" uid="uid://cv62ak8571xx" path="res://Resources/Pickups/gfx/Rosary.png" id="1_f8qgd"]
+[ext_resource type="Script" path="res://Scripts/Rosary.gd" id="2_h17vx"]
+
+[resource]
+script = ExtResource("2_h17vx")
+title = "Rosary"
+icon = ExtResource("1_f8qgd")
+description = "Destroys all minions around"

@@ -18,3 +18,7 @@ func _on_body_entered(body):
 
 func _on_screen_exited():
 	queue_free()
+
+func _on_area_entered(area):
+	if area.get_parent().has_method("take_damage"):
+		area.get_parent().take_damage(damage)

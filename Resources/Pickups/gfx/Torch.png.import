@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbkjkelwtdd8u"
-path="res://.godot/imported/Skull_green.png-be5d75ad48790a2ae47250590aee21fe.ctex"
+uid="uid://4xcqn66sik4h"
+path="res://.godot/imported/Torch.png-a81d0156b9e536dac4a6c60058f150e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Pickups/gfx/Skull_green.png"
-dest_files=["res://.godot/imported/Skull_green.png-be5d75ad48790a2ae47250590aee21fe.ctex"]
+source_file="res://Resources/Pickups/gfx/Torch.png"
+dest_files=["res://.godot/imported/Torch.png-a81d0156b9e536dac4a6c60058f150e2.ctex"]
 
 [params]
 

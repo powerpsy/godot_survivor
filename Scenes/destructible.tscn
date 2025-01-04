@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://b21oe80s20gvc"]
 
 [ext_resource type="Texture2D" uid="uid://4xcqn66sik4h" path="res://Resources/Pickups/gfx/Torch.png" id="1_e2etq"]
-[ext_resource type="Script" path="res://Scripts/destructible.gd" id="2_5hfnp"]
+[ext_resource type="Script" path="res://Scripts/Destructible.gd" id="2_5hfnp"]
 [ext_resource type="Script" path="res://Scripts/PickupResource.gd" id="3_2smmi"]
 [ext_resource type="Resource" uid="uid://okilnwxytoe2" path="res://Resources/Pickups/heart.tres" id="4_6yar8"]
 [ext_resource type="Resource" uid="uid://c67v2v263gtq2" path="res://Resources/Pickups/rosary.tres" id="5_637rh"]

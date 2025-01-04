@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MagicBible" load_steps=6 format=3 uid="uid://0cd40nv4woci"]
+
+[ext_resource type="Texture2D" uid="uid://bb103y3radro3" path="res://Resources/Weapons/gfx/Holy bible.png" id="1_8sgd0"]
+[ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/projectile.tscn" id="1_sx8av"]
+[ext_resource type="Script" path="res://Scripts/MagicBible.gd" id="2_4ndw4"]
+[ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="3_y2m36"]
+[ext_resource type="Texture2D" uid="uid://bppr4ykxm3fja" path="res://Resources/Weapons/gfx/Sprite holy bible.png" id="4_a7jqm"]
+
+[resource]
+script = ExtResource("2_4ndw4")
+angular_speed = 270
+radius = 125
+amount = 6
+damage = 15.0
+cooldown = 1.0
+speed = 0.0
+projectile_node = ExtResource("1_sx8av")
+upgrades = Array[ExtResource("3_y2m36")]([])
+title = "Holy bible"
+icon = ExtResource("1_8sgd0")
+texture = ExtResource("4_a7jqm")

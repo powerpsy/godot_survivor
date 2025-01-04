@@ -1,19 +1,22 @@
-[gd_scene load_steps=30 format=3 uid="uid://bytik7vxy8glv"]
+[gd_scene load_steps=33 format=3 uid="uid://bytik7vxy8glv"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_l8yih"]
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_l8yih"]
 [ext_resource type="Texture2D" uid="uid://c5hmj1cr8vqr2" path="res://Resources/UI/Star.png" id="2_aygry"]
 [ext_resource type="PackedScene" uid="uid://bqp2j0ltvnkx0" path="res://Scenes/slot.tscn" id="2_vi1tp"]
-[ext_resource type="Resource" uid="uid://bid5nrm6s4ui3" path="res://Resources/Weapons/Magic wand.tres" id="3_oqcfp"]
 [ext_resource type="Texture2D" uid="uid://b6v1y7lts3nk" path="res://Resources/UI/GUI2.png" id="3_q36li"]
 [ext_resource type="Texture2D" uid="uid://empavmgcy0s3" path="res://Resources/UI/Exp-under.png" id="4_he36o"]
 [ext_resource type="Texture2D" uid="uid://b5pejo60chdmp" path="res://Resources/UI/Exp-bar.png" id="5_krbfl"]
+[ext_resource type="Resource" uid="uid://cxbva202ej7d1" path="res://Resources/Weapons/Magic bible.tres" id="5_vlh1h"]
 [ext_resource type="PackedScene" uid="uid://b5n1ivpnsdpyk" path="res://Scenes/passive_slot.tscn" id="6_cu7ce"]
 [ext_resource type="Texture2D" uid="uid://nb3ar74enmt0" path="res://Resources/UI/Exp-progress.png" id="6_jv3fa"]
-[ext_resource type="Script" path="res://Scripts/options.gd" id="7_eieeo"]
+[ext_resource type="Resource" uid="uid://d1ttytgpsgin1" path="res://Resources/Weapons/Magic lightning.tres" id="6_seyk5"]
+[ext_resource type="Script" path="res://Scripts/Options.gd" id="7_eieeo"]
+[ext_resource type="Resource" uid="uid://bid5nrm6s4ui3" path="res://Resources/Weapons/Magic wand.tres" id="7_k7dxe"]
 [ext_resource type="Resource" uid="uid://d20u7wmxf2wy4" path="res://Resources/Passive Items/Magnet.tres" id="7_n5ssb"]
+[ext_resource type="Resource" uid="uid://dfvapublk4yew" path="res://Resources/Passive Items/Armor.tres" id="10_oihir"]
 [ext_resource type="Resource" uid="uid://q7fqm0kio41x" path="res://Resources/Passive Items/Recovery.tres" id="10_vb2h2"]
 [ext_resource type="Texture2D" uid="uid://ckd3n740iesij" path="res://Resources/UI/Chests.png" id="12_nxhvd"]
-[ext_resource type="Script" path="res://Scripts/chest.gd" id="12_o1raq"]
+[ext_resource type="Script" path="res://Scripts/Chest.gd" id="12_o1raq"]
 
 [sub_resource type="Gradient" id="Gradient_uhfxs"]
 interpolation_mode = 2
@@ -176,13 +179,15 @@ offset_bottom = 72.0
 
 [node name="Slot" parent="UI/Weapons" instance=ExtResource("2_vi1tp")]
 layout_mode = 2
-item = ExtResource("3_oqcfp")
+item = ExtResource("5_vlh1h")
 
 [node name="Slot2" parent="UI/Weapons" instance=ExtResource("2_vi1tp")]
 layout_mode = 2
+item = ExtResource("6_seyk5")
 
 [node name="Slot3" parent="UI/Weapons" instance=ExtResource("2_vi1tp")]
 layout_mode = 2
+item = ExtResource("7_k7dxe")
 
 [node name="Slot4" parent="UI/Weapons" instance=ExtResource("2_vi1tp")]
 layout_mode = 2
@@ -203,6 +208,7 @@ item = ExtResource("10_vb2h2")
 
 [node name="PassiveSlot3" parent="UI/PassiveItems" instance=ExtResource("6_cu7ce")]
 layout_mode = 2
+item = ExtResource("10_oihir")
 
 [node name="PassiveSlot4" parent="UI/PassiveItems" instance=ExtResource("6_cu7ce")]
 layout_mode = 2

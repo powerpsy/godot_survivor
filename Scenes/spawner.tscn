@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://bedmfbwlbe7hr"]
 
-[ext_resource type="Script" path="res://Scripts/spawner.gd" id="1_juo3a"]
+[ext_resource type="Script" path="res://Scripts/Spawner.gd" id="1_juo3a"]
 [ext_resource type="PackedScene" uid="uid://vxy7pga1lm8r" path="res://Scenes/ennemy.tscn" id="2_qvk4k"]
 [ext_resource type="PackedScene" uid="uid://b21oe80s20gvc" path="res://Scenes/destructible.tscn" id="3_e0i4k"]
 [ext_resource type="Script" path="res://Scripts/EnnemyType.gd" id="3_gdoyb"]

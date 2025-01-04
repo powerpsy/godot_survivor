@@ -1,10 +1,11 @@
-[gd_resource type="Resource" script_class="SingleShot" load_steps=6 format=3 uid="uid://c2xiw5fcvswu3"]
+[gd_resource type="Resource" script_class="SingleShot" load_steps=7 format=3 uid="uid://c2xiw5fcvswu3"]
 
 [ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/projectile.tscn" id="1_wpctm"]
 [ext_resource type="Script" path="res://Scripts/SingleShot.gd" id="2_7gkc3"]
 [ext_resource type="AudioStream" uid="uid://cavlrr3l4vmfa" path="res://Resources/Weapons/sfx/Holy wand.wav" id="3_gscjj"]
 [ext_resource type="Texture2D" uid="uid://bj4ux4swxael6" path="res://Resources/Weapons/gfx/Holy wand.png" id="3_taf1r"]
 [ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="4_anjww"]
+[ext_resource type="Texture2D" uid="uid://dokldng02ampj" path="res://Resources/Weapons/gfx/Sprite holy wand.png" id="5_fqlgm"]
 
 [resource]
 script = ExtResource("2_7gkc3")
@@ -15,4 +16,5 @@ projectile_node = ExtResource("1_wpctm")
 upgrades = Array[ExtResource("4_anjww")]([])
 sound = ExtResource("3_gscjj")
 title = "Holy wand"
-texture = ExtResource("3_taf1r")
+icon = ExtResource("3_taf1r")
+texture = ExtResource("5_fqlgm")

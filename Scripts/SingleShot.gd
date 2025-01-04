@@ -11,6 +11,8 @@ func shoot(source, target, scene_tree):
 	projectile.damage = damage
 	projectile.speed = speed
 	projectile.source = source
+	projectile.find_child("Sprite2D").texture = texture
+
 	projectile.direction = (target.position - source.position).normalized()
 	
 	scene_tree.current_scene.add_child(projectile)

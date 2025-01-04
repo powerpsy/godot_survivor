@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b5n1ivpnsdpyk"]
 
-[ext_resource type="Script" path="res://Scripts/passive_slot.gd" id="1_67yne"]
+[ext_resource type="Script" path="res://Scripts/Passive_Slot.gd" id="1_67yne"]
 
 [node name="PassiveSlot" type="PanelContainer"]
 offset_right = 40.0

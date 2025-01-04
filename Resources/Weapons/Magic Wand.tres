@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="SingleShot" load_steps=18 format=3 uid="uid://bid5nrm6s4ui3"]
+[gd_resource type="Resource" script_class="SingleShot" load_steps=20 format=3 uid="uid://bid5nrm6s4ui3"]
 
 [ext_resource type="Resource" uid="uid://c2xiw5fcvswu3" path="res://Resources/Weapons/Holy wand.tres" id="1_c00h6"]
 [ext_resource type="Resource" uid="uid://d20u7wmxf2wy4" path="res://Resources/Passive Items/Magnet.tres" id="2_mxekv"]
@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://hkgh30hln5l0" path="res://Resources/Weapons/sfx/Magic wand.wav" id="5_c1ali"]
 [ext_resource type="Texture2D" uid="uid://dpugdx40i8umu" path="res://Resources/Weapons/gfx/Magic wand.png" id="5_uvh3i"]
 [ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="6_e652v"]
+[ext_resource type="Texture2D" uid="uid://c1q38wdelimyr" path="res://Resources/Weapons/gfx/Sprite magic wand.png" id="7_rlaqb"]
 [ext_resource type="Script" path="res://Scripts/ProjectileUpgrade.gd" id="7_yj4rl"]
 
 [sub_resource type="Resource" id="Resource_qfkst"]
@@ -72,15 +73,23 @@ damage = 0.0
 cooldown = -0.1
 description = "0.1s Cooldown"
 
+[sub_resource type="Resource" id="Resource_vgiqv"]
+script = ExtResource("7_yj4rl")
+speed = 0.0
+damage = 3.0
+cooldown = 0.0
+description = "+3 Damage"
+
 [resource]
 script = ExtResource("4_2hshj")
 damage = 1.0
 cooldown = 0.5
 speed = 500.0
 projectile_node = ExtResource("3_bu16r")
-upgrades = Array[ExtResource("6_e652v")]([SubResource("Resource_qfkst"), SubResource("Resource_r2hoa"), SubResource("Resource_66xao"), SubResource("Resource_vplyh"), SubResource("Resource_wq2mx"), SubResource("Resource_svb8v"), SubResource("Resource_kkytx"), SubResource("Resource_bcv1o"), SubResource("Resource_dlrju")])
+upgrades = Array[ExtResource("6_e652v")]([SubResource("Resource_qfkst"), SubResource("Resource_r2hoa"), SubResource("Resource_66xao"), SubResource("Resource_vplyh"), SubResource("Resource_wq2mx"), SubResource("Resource_svb8v"), SubResource("Resource_kkytx"), SubResource("Resource_bcv1o"), SubResource("Resource_dlrju"), SubResource("Resource_vgiqv")])
 item_needed = ExtResource("2_mxekv")
 evolution = ExtResource("1_c00h6")
 sound = ExtResource("5_c1ali")
 title = "Magic Wand"
-texture = ExtResource("5_uvh3i")
+icon = ExtResource("5_uvh3i")
+texture = ExtResource("7_rlaqb")

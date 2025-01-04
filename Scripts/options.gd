@@ -38,20 +38,20 @@ func show_option():
 	var passive_item_available = get_available_resource_in(passive_items)
 	if weapons_available.size() == 0 and passive_item_available.size() == 0:
 		return
-		
+
 	for slot in get_children():
 		slot.queue_free()
-		
+
 	var option_size = 0
 	for weapon in weapons_available:
 			option_size += add_option(weapon)
-			
-			if weapon.max_level_reached() and weapon.item_needed in passive_item_available:
-				var option_slot = OptionSlot.instantiate()
-				option_slot.item = weapon
-				add_child(option_slot)
-				option_size +=1
-			
+
+#			if weapon.max_level_reached() and weapon.item_needed in passive_item_available:
+#				var option_slot = OptionSlot.instantiate()
+#				option_slot.item = weapon
+#				add_child(option_slot)
+#				option_size +=1
+
 	for passive_item in passive_item_available:
 			option_size += add_option(passive_item)
 	if option_size == 0:
@@ -67,8 +67,9 @@ func get_available_upgrades() -> Array[Item]:
 	for weapon : Weapon in get_available_resource_in(weapons):
 		if weapon.is_upgradable():
 			upgrades.append(weapon)
+		if weapon.max_level_reached() and weapon.item_needed in get_available_resource_in(passive_items):
+			upgrades.append(weapon)
 	for passive_item : PassiveItem in get_available_resource_in(passive_items):
 		if passive_item.is_upgradable():
 			upgrades.append(passive_item)
-
 	return upgrades

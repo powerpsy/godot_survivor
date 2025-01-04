@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="MagicLightning" load_steps=14 format=3 uid="uid://d1ttytgpsgin1"]
+
+[ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/projectile.tscn" id="1_7b4f6"]
+[ext_resource type="Texture2D" uid="uid://hcnde32cvq2i" path="res://Resources/Weapons/gfx/Magic lightning.png" id="1_cp0qp"]
+[ext_resource type="Resource" uid="uid://cdhlsk3six0sv" path="res://Resources/Weapons/Holy lightning.tres" id="1_jpes7"]
+[ext_resource type="Script" path="res://Scripts/MagicLightning.gd" id="2_8tewk"]
+[ext_resource type="Resource" uid="uid://dfvapublk4yew" path="res://Resources/Passive Items/Armor.tres" id="2_13etw"]
+[ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="3_mgsaf"]
+[ext_resource type="Texture2D" uid="uid://cfvlp6f7l0i6e" path="res://Resources/Weapons/gfx/Sprite magic lightning.png" id="4_exqrg"]
+[ext_resource type="Script" path="res://Scripts/MagicLightningUpgrade.gd" id="7_8shtc"]
+
+[sub_resource type="Resource" id="Resource_h47ii"]
+script = ExtResource("7_8shtc")
+amount = 1
+damage = 0.0
+cooldown = 0.0
+description = "+1 Amount"
+
+[sub_resource type="Resource" id="Resource_up1nj"]
+script = ExtResource("7_8shtc")
+amount = 1
+damage = 0.0
+cooldown = 0.0
+description = "+1 Amount"
+
+[sub_resource type="Resource" id="Resource_evp6t"]
+script = ExtResource("7_8shtc")
+amount = 0
+damage = 4.0
+cooldown = 0.0
+description = "+4 Damage"
+
+[sub_resource type="Resource" id="Resource_5p2g4"]
+script = ExtResource("7_8shtc")
+amount = 1
+damage = 0.0
+cooldown = 0.0
+description = "+1 Amount"
+
+[sub_resource type="Resource" id="Resource_assi7"]
+script = ExtResource("7_8shtc")
+amount = 0
+damage = 0.0
+cooldown = 1.0
+description = "-1s Cooldown"
+
+[resource]
+script = ExtResource("2_8tewk")
+amount = 7
+damage = 5.0
+cooldown = 4.0
+speed = 0.0
+projectile_node = ExtResource("1_7b4f6")
+upgrades = Array[ExtResource("3_mgsaf")]([SubResource("Resource_h47ii"), SubResource("Resource_up1nj"), SubResource("Resource_evp6t"), SubResource("Resource_5p2g4"), SubResource("Resource_assi7")])
+item_needed = ExtResource("2_13etw")
+evolution = ExtResource("1_jpes7")
+title = "Magic lightning"
+icon = ExtResource("1_cp0qp")
+texture = ExtResource("4_exqrg")

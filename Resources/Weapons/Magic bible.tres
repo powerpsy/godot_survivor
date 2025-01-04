@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="MagicBible" load_steps=19 format=3 uid="uid://cxbva202ej7d1"]
+
+[ext_resource type="Resource" uid="uid://0cd40nv4woci" path="res://Resources/Weapons/Holy bible.tres" id="1_86ep2"]
+[ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/projectile.tscn" id="1_iow3r"]
+[ext_resource type="Script" path="res://Scripts/MagicBible.gd" id="2_pverv"]
+[ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="3_ip5xl"]
+[ext_resource type="Texture2D" uid="uid://cd7a30dwhbmpd" path="res://Resources/Weapons/gfx/Magic bible.png" id="3_r7cwf"]
+[ext_resource type="Resource" uid="uid://q7fqm0kio41x" path="res://Resources/Passive Items/Recovery.tres" id="3_sxqss"]
+[ext_resource type="Texture2D" uid="uid://ctt0e0xl7f8d3" path="res://Resources/Weapons/gfx/Sprite magic bible.png" id="4_ctoeq"]
+[ext_resource type="Script" path="res://Scripts/MagicBibleUpgrade.gd" id="5_bitpu"]
+
+[sub_resource type="Resource" id="Resource_714oq"]
+script = ExtResource("5_bitpu")
+angular_speed = 0.0
+amount = 1
+damage = 0.0
+cooldown = 0.0
+description = "+1 Amount"
+
+[sub_resource type="Resource" id="Resource_fkuyu"]
+script = ExtResource("5_bitpu")
+angular_speed = 0.0
+amount = 0
+damage = 1.0
+cooldown = 0.0
+description = "+1 Damage"
+
+[sub_resource type="Resource" id="Resource_s6d0e"]
+script = ExtResource("5_bitpu")
+angular_speed = 0.0
+amount = 1
+damage = 0.0
+cooldown = 0.0
+description = "+1 Amount"
+
+[sub_resource type="Resource" id="Resource_8r1ne"]
+script = ExtResource("5_bitpu")
+angular_speed = 90.0
+amount = 0
+damage = 0.0
+cooldown = 0.0
+description = "Speed Increase"
+
+[sub_resource type="Resource" id="Resource_8vn2g"]
+script = ExtResource("5_bitpu")
+angular_speed = 0.0
+amount = 1
+damage = 0.0
+cooldown = 0.0
+description = "+1 Amount"
+
+[sub_resource type="Resource" id="Resource_aa67v"]
+script = ExtResource("5_bitpu")
+angular_speed = 0.0
+amount = 0
+damage = 1.0
+cooldown = 1.0
+description = "-1s Cooldown"
+
+[sub_resource type="Resource" id="Resource_idoyq"]
+script = ExtResource("5_bitpu")
+angular_speed = 90.0
+amount = 0
+damage = 0.0
+cooldown = 0.0
+description = "Speed increase"
+
+[sub_resource type="Resource" id="Resource_el2xw"]
+script = ExtResource("5_bitpu")
+angular_speed = 0.0
+amount = 1
+damage = 0.0
+cooldown = 0.0
+description = "+1 Amount"
+
+[sub_resource type="Resource" id="Resource_qbmnm"]
+script = ExtResource("5_bitpu")
+angular_speed = 0.0
+amount = 0
+damage = 1.0
+cooldown = 0.0
+description = "+1 Damage"
+
+[sub_resource type="Resource" id="Resource_cqi11"]
+script = ExtResource("5_bitpu")
+angular_speed = 0.0
+amount = 0
+damage = 1.0
+cooldown = 0.0
+description = "+1 Damage"
+
+[resource]
+script = ExtResource("2_pverv")
+angular_speed = 90
+radius = 125
+amount = 1
+damage = 2.0
+cooldown = 2.0
+speed = 0.0
+projectile_node = ExtResource("1_iow3r")
+upgrades = Array[ExtResource("3_ip5xl")]([SubResource("Resource_714oq"), SubResource("Resource_fkuyu"), SubResource("Resource_s6d0e"), SubResource("Resource_8r1ne"), SubResource("Resource_8vn2g"), SubResource("Resource_aa67v"), SubResource("Resource_idoyq"), SubResource("Resource_el2xw"), SubResource("Resource_qbmnm"), SubResource("Resource_cqi11")])
+item_needed = ExtResource("3_sxqss")
+evolution = ExtResource("1_86ep2")
+title = "Magic bible"
+icon = ExtResource("3_r7cwf")
+texture = ExtResource("4_ctoeq")

@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://bh3ka2jg4v24j"]
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=8 format=3 uid="uid://bh3ka2jg4v24j"]
 
+[ext_resource type="Texture2D" uid="uid://cmwp5e4mytbbb" path="res://Resources/Passive Items/gfx/Sprite movement speed.png" id="1_3sx21"]
 [ext_resource type="Script" path="res://Scripts/PassiveItem.gd" id="1_kbptv"]
 [ext_resource type="Texture2D" uid="uid://csfvmharws65l" path="res://Resources/Passive Items/gfx/Movement Speed.png" id="2_dtxb6"]
 [ext_resource type="Script" path="res://Scripts/Statistics.gd" id="3_smytp"]
@@ -44,4 +45,5 @@ growth = 0.0
 script = ExtResource("1_kbptv")
 upgrades = Array[ExtResource("3_smytp")]([SubResource("Resource_rsngd"), SubResource("Resource_mooqi"), SubResource("Resource_qwbf4")])
 title = "Movement Speed"
+icon = ExtResource("1_3sx21")
 texture = ExtResource("2_dtxb6")

@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://d20u7wmxf2wy4"]
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=8 format=3 uid="uid://d20u7wmxf2wy4"]
 
+[ext_resource type="Texture2D" uid="uid://bya38d16bcqr4" path="res://Resources/Passive Items/gfx/Sprite magnet.png" id="1_i6325"]
 [ext_resource type="Script" path="res://Scripts/PassiveItem.gd" id="1_llykc"]
 [ext_resource type="Texture2D" uid="uid://d247ultca25wq" path="res://Resources/Passive Items/gfx/Magnet.png" id="2_p4nds"]
 [ext_resource type="Script" path="res://Scripts/Statistics.gd" id="3_ta4p6"]
@@ -44,4 +45,5 @@ growth = 0.0
 script = ExtResource("1_llykc")
 upgrades = Array[ExtResource("3_ta4p6")]([SubResource("Resource_3gg6b"), SubResource("Resource_8nuui"), SubResource("Resource_7130y")])
 title = "Magnet"
+icon = ExtResource("1_i6325")
 texture = ExtResource("2_p4nds")

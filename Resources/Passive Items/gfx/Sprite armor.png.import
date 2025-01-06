@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck8h528qbr2p3"
-path="res://.godot/imported/Max_health.png-d08075f948e44a125f267323507cb408.ctex"
+uid="uid://cg8ts14eqkamd"
+path="res://.godot/imported/Sprite armor.png-cbfea4b8336236d1375b7c9c8077afa0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Passive Items/gfx/Max_health.png"
-dest_files=["res://.godot/imported/Max_health.png-d08075f948e44a125f267323507cb408.ctex"]
+source_file="res://Resources/Passive Items/gfx/Sprite armor.png"
+dest_files=["res://.godot/imported/Sprite armor.png-cbfea4b8336236d1375b7c9c8077afa0.ctex"]
 
 [params]
 

@@ -12,12 +12,6 @@ func _ready():
 	particles.hide()
 	panel.hide()
 
-func close_option():
-	hide()
-	particles.hide()
-	panel.hide()
-	get_tree().paused = false
-
 func get_available_resource_in(items) -> Array[Item]:
 	var resources : Array[Item] = []
 	for item in items.get_children():
@@ -61,6 +55,12 @@ func show_option():
 	particles.show()
 	panel.show()
 	get_tree().paused = true
+
+func close_option():
+	hide()
+	particles.hide()
+	panel.hide()
+	get_tree().paused = false
 
 func get_available_upgrades() -> Array[Item]:
 	var upgrades : Array[Item] = []

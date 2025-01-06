@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://dfvapublk4yew"]
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=8 format=3 uid="uid://dfvapublk4yew"]
 
 [ext_resource type="Script" path="res://Scripts/PassiveItem.gd" id="1_lasky"]
+[ext_resource type="Texture2D" uid="uid://cg8ts14eqkamd" path="res://Resources/Passive Items/gfx/Sprite armor.png" id="1_osdfg"]
 [ext_resource type="Texture2D" uid="uid://dq1wx438fbtn7" path="res://Resources/Passive Items/gfx/Armor.png" id="2_gr80m"]
 [ext_resource type="Script" path="res://Scripts/Statistics.gd" id="3_7ylht"]
 
@@ -44,4 +45,5 @@ growth = 0.0
 script = ExtResource("1_lasky")
 upgrades = Array[ExtResource("3_7ylht")]([SubResource("Resource_xok6e"), SubResource("Resource_r26e3"), SubResource("Resource_c3tvp")])
 title = "Armor"
+icon = ExtResource("1_osdfg")
 texture = ExtResource("2_gr80m")

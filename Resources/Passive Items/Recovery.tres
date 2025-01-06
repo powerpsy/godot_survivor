@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://q7fqm0kio41x"]
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=8 format=3 uid="uid://q7fqm0kio41x"]
 
+[ext_resource type="Texture2D" uid="uid://bjr5hxpe2uu10" path="res://Resources/Passive Items/gfx/Sprite recovery.png" id="1_6ymu4"]
 [ext_resource type="Script" path="res://Scripts/PassiveItem.gd" id="1_pxcf5"]
 [ext_resource type="Texture2D" uid="uid://cddc57dcqrjfh" path="res://Resources/Passive Items/gfx/Recovery.png" id="2_qp371"]
 [ext_resource type="Script" path="res://Scripts/Statistics.gd" id="3_busng"]
@@ -44,4 +45,5 @@ growth = 0.0
 script = ExtResource("1_pxcf5")
 upgrades = Array[ExtResource("3_busng")]([SubResource("Resource_lxcc7"), SubResource("Resource_3wd0w"), SubResource("Resource_fv78l")])
 title = "Recovery"
+icon = ExtResource("1_6ymu4")
 texture = ExtResource("2_qp371")

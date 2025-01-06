@@ -3,6 +3,7 @@ extends NinePatchRect
 @onready var chest = $AnimatedSprite2D
 @onready var options = %Options
 @onready var rewards = $Rewards
+@onready var sound : AudioStream
 
 func _ready():
 	randomize()
@@ -17,18 +18,6 @@ func open():
 	show()
 	$Open.show()
 	$Close.hide()
-
-func _on_open_pressed():
-	chest.play("open_boss_chest")
-	await chest.animation_finished
-	set_reward()
-	$Open.hide()
-	$Close.show()
-
-func _on_close_pressed():
-	get_tree().paused = false
-	hide()
-	
 
 func set_reward():
 	clear_reward()
@@ -58,9 +47,21 @@ func clear_reward():
 	for slot in rewards.get_children():
 		slot.texture = null
 
+func _on_close_pressed():
+	get_tree().paused = false
+	hide()
+
+func _on_open_pressed():
+	SoundManager.play_sfx(sound)
+	clear_reward()
+	chest.play("open_boss_chest")
+	await chest.animation_finished
+	set_reward()
+	$Open.hide()
+	$Close.show()
+
 func add_gold(index):
 	var gold : Gold = load("res://Resources/Pickups/gold.tres")
 	gold.player_reference = owner
 	rewards.get_child(index).texture = gold.icon
 	gold.activate()
-	

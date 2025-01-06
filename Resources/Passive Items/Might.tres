@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://dnfbtwhlvn7ga"]
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=8 format=3 uid="uid://dnfbtwhlvn7ga"]
 
 [ext_resource type="Script" path="res://Scripts/PassiveItem.gd" id="1_jay50"]
+[ext_resource type="Texture2D" uid="uid://dfqc0nd1il0or" path="res://Resources/Passive Items/gfx/Sprite might.png" id="1_sw71f"]
 [ext_resource type="Texture2D" uid="uid://dpn84vc2hklrh" path="res://Resources/Passive Items/gfx/Might.png" id="2_ohn63"]
 [ext_resource type="Script" path="res://Scripts/Statistics.gd" id="3_shcaj"]
 
@@ -44,4 +45,5 @@ growth = 0.0
 script = ExtResource("1_jay50")
 upgrades = Array[ExtResource("3_shcaj")]([SubResource("Resource_fir3j"), SubResource("Resource_2iadd"), SubResource("Resource_lfm1b")])
 title = "Might"
+icon = ExtResource("1_sw71f")
 texture = ExtResource("2_ohn63")

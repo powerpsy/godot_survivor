@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://dcwl05onrhifh"]
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=8 format=3 uid="uid://dcwl05onrhifh"]
 
+[ext_resource type="Texture2D" uid="uid://4dbnhqn5ibut" path="res://Resources/Passive Items/gfx/Sprite growth.png" id="1_3sl4g"]
 [ext_resource type="Script" path="res://Scripts/PassiveItem.gd" id="1_umabp"]
 [ext_resource type="Texture2D" uid="uid://csm5s3l3qlihp" path="res://Resources/Passive Items/gfx/Growth.png" id="2_esjsj"]
 [ext_resource type="Script" path="res://Scripts/Statistics.gd" id="3_4r1f8"]
@@ -44,4 +45,5 @@ growth = 0.2
 script = ExtResource("1_umabp")
 upgrades = Array[ExtResource("3_4r1f8")]([SubResource("Resource_yhp2p"), SubResource("Resource_krtl0"), SubResource("Resource_6vjl1")])
 title = "Growth"
+icon = ExtResource("1_3sl4g")
 texture = ExtResource("2_esjsj")

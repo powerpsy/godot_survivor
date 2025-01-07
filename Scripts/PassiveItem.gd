@@ -24,5 +24,6 @@ func upgrade_item():
 	player_reference.area += upgrade.area
 	player_reference.magnet += upgrade.magnet
 	player_reference.growth += upgrade.growth
+	player_reference.armor += upgrade.armor
 
 	level += 1

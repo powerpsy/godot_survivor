@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 SoundManager="*res://Scenes/sound_manager.tscn"
+SaveData="*res://Scenes/save_data.tscn"
+Persistence="*res://Scenes/persistence.tscn"
 
 [dotnet]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq26hh4fp1vf"
-path="res://.godot/imported/Toad.png-eb6f7c85c3b3ed2428fe149f61ada7ca.ctex"
+uid="uid://cdi54pfibme2j"
+path="res://.godot/imported/Snake.png-d2e16ad8e36d803ab093e51b56b53a48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Ennemies/gfx/Toad.png"
-dest_files=["res://.godot/imported/Toad.png-eb6f7c85c3b3ed2428fe149f61ada7ca.ctex"]
+source_file="res://Resources/Ennemies_gfx/Snake.png"
+dest_files=["res://.godot/imported/Snake.png-d2e16ad8e36d803ab093e51b56b53a48.ctex"]
 
 [params]
 

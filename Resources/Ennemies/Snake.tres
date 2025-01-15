@@ -4,12 +4,12 @@
 [ext_resource type="Script" path="res://Scripts/PickupResource.gd" id="1_v2erd"]
 [ext_resource type="Resource" uid="uid://dv11w3t7e6sxl" path="res://Resources/Pickups/gem_blue.tres" id="2_gqvxx"]
 [ext_resource type="Resource" uid="uid://bus1aayij3xcm" path="res://Resources/Pickups/gem_green.tres" id="3_ngqwj"]
-[ext_resource type="Texture2D" uid="uid://cdi54pfibme2j" path="res://Resources/Ennemies/gfx/Snake.png" id="5_vyq2k"]
+[ext_resource type="Texture2D" uid="uid://cdi54pfibme2j" path="res://Resources/Ennemies_gfx/Snake.png" id="5_lclxb"]
 
 [resource]
 script = ExtResource("1_upafw")
 title = "Snake"
-texture = ExtResource("5_vyq2k")
+texture = ExtResource("5_lclxb")
 health = 8.0
 damage = 10.0
 drops = Array[ExtResource("1_v2erd")]([ExtResource("2_gqvxx"), ExtResource("3_ngqwj")])

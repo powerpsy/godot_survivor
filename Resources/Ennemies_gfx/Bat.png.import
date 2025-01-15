@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dams2b2cgvaps"
-path="res://.godot/imported/Mask.png-0e4e3a98692fa6ccf32fd19bb89bc23f.ctex"
+uid="uid://bdlgqolffxq41"
+path="res://.godot/imported/Bat.png-5704b3a122f45c6959f1a2422a797ee7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Ennemies/gfx/Mask.png"
-dest_files=["res://.godot/imported/Mask.png-0e4e3a98692fa6ccf32fd19bb89bc23f.ctex"]
+source_file="res://Resources/Ennemies_gfx/Bat.png"
+dest_files=["res://.godot/imported/Bat.png-5704b3a122f45c6959f1a2422a797ee7.ctex"]
 
 [params]
 

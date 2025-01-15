@@ -17,7 +17,7 @@
 [ext_resource type="Resource" uid="uid://q7fqm0kio41x" path="res://Resources/Passive Items/Recovery.tres" id="10_vb2h2"]
 [ext_resource type="Texture2D" uid="uid://ckd3n740iesij" path="res://Resources/UI/Chests.png" id="12_nxhvd"]
 [ext_resource type="Script" path="res://Scripts/Chest.gd" id="12_o1raq"]
-[ext_resource type="Script" path="res://Scripts/back_2_menu.gd" id="18_ri5i7"]
+[ext_resource type="Script" path="res://Scripts/Back_2_menu.gd" id="18_ri5i7"]
 
 [sub_resource type="Gradient" id="Gradient_uhfxs"]
 interpolation_mode = 2

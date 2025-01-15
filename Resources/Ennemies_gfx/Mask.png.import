@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdi54pfibme2j"
-path="res://.godot/imported/Snake.png-b981d2343ced806cf671ef61d2e014c8.ctex"
+uid="uid://dams2b2cgvaps"
+path="res://.godot/imported/Mask.png-ad8846b9a9bfd07395dda5e6fe855b57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Ennemies/gfx/Snake.png"
-dest_files=["res://.godot/imported/Snake.png-b981d2343ced806cf671ef61d2e014c8.ctex"]
+source_file="res://Resources/Ennemies_gfx/Mask.png"
+dest_files=["res://.godot/imported/Mask.png-ad8846b9a9bfd07395dda5e6fe855b57.ctex"]
 
 [params]
 

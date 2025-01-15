@@ -1,0 +1,14 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://dnqxvcoyx4ics"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fr3bd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tpjk8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xiurn"]
+bg_color = Color(0.194415, 0.265191, 0.564459, 1)
+
+[resource]
+Button/constants/outline_size = 2
+Button/styles/disabled = SubResource("StyleBoxFlat_fr3bd")
+Button/styles/focus = SubResource("StyleBoxEmpty_tpjk8")
+Button/styles/normal = SubResource("StyleBoxFlat_xiurn")

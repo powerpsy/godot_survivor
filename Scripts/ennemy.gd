@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var player_reference : CharacterBody2D
-var damage_popup_node = preload("res://Scenes/damage.tscn")
+var damage_popup_node = preload("res://Scenes/Damage.tscn")
 var direction : Vector2
 var speed : float = 200
 const knock_back = 100
@@ -9,7 +9,7 @@ var damage : float
 var knockback : Vector2
 var separation : float
 
-var drop = preload("res://Scenes/pickups.tscn")
+var drop = preload("res://Scenes/Pickups.tscn")
 
 var health : float:
 	set(value):

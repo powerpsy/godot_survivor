@@ -11,15 +11,15 @@ config_version=5
 [application]
 
 config/name="godot_survivor"
-run/main_scene="res://Scenes/main_menu.tscn"
+run/main_scene="res://Scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-SoundManager="*res://Scenes/sound_manager.tscn"
-SaveData="*res://Scenes/save_data.tscn"
-Persistence="*res://Scenes/persistence.tscn"
+SoundManager="*res://Scenes/SoundManager.tscn"
+SaveData="*res://Scenes/SaveData.tscn"
+Persistence="*res://Scenes/Persistence.tscn"
 
 [dotnet]
 

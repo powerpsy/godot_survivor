@@ -1,23 +1,23 @@
 [gd_scene load_steps=48 format=3 uid="uid://day1e2l35qaq7"]
 
-[ext_resource type="Script" path="res://Scripts/Skill_tree.gd" id="1_2xwl1"]
-[ext_resource type="PackedScene" uid="uid://n7x1rf7ta8sf" path="res://Scenes/upgrade.tscn" id="1_c3f5a"]
-[ext_resource type="Theme" uid="uid://dnqxvcoyx4ics" path="res://Resources/UI/theme_menu.tres" id="1_muwil"]
-[ext_resource type="Script" path="res://Scripts/Skill.gd" id="2_bw8rk"]
-[ext_resource type="Script" path="res://Scripts/Main_menu.gd" id="2_dmbs4"]
-[ext_resource type="Script" path="res://Scripts/Statistics.gd" id="3_pvmlp"]
-[ext_resource type="Texture2D" uid="uid://dfqc0nd1il0or" path="res://Resources/Passive Items/gfx/Sprite might.png" id="4_ldhq3"]
-[ext_resource type="Script" path="res://Scripts/UI_gold.gd" id="5_iehcn"]
-[ext_resource type="Texture2D" uid="uid://cg8ts14eqkamd" path="res://Resources/Passive Items/gfx/Sprite armor.png" id="6_flt5f"]
-[ext_resource type="Texture2D" uid="uid://ci07nvv7tg5qo" path="res://Resources/Pickups/gfx/Gold.png" id="6_w8bbn"]
-[ext_resource type="Texture2D" uid="uid://bjr5hxpe2uu10" path="res://Resources/Passive Items/gfx/Sprite recovery.png" id="7_fw0rx"]
-[ext_resource type="Texture2D" uid="uid://b6v1y7lts3nk" path="res://Resources/UI/GUI2.png" id="9_0gckc"]
-[ext_resource type="Texture2D" uid="uid://bigb63pgja6e6" path="res://Resources/UI/GUI1.png" id="9_ec8ka"]
-[ext_resource type="Script" path="res://Scripts/Start_game.gd" id="10_r8b31"]
-[ext_resource type="Script" path="res://Scripts/ennemy_list.gd" id="13_y58ey"]
+[ext_resource type="Theme" uid="uid://dnqxvcoyx4ics" path="res://Resources/UI/theme_menu.tres" id="1_he7j0"]
+[ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="2_vu1v8"]
+[ext_resource type="Texture2D" uid="uid://b6v1y7lts3nk" path="res://Resources/UI/GUI2.png" id="3_d11t8"]
+[ext_resource type="Script" path="res://Scripts/StartGame.gd" id="4_pipdu"]
+[ext_resource type="Script" path="res://Scripts/SkillTree.gd" id="5_uydkk"]
+[ext_resource type="PackedScene" uid="uid://n7x1rf7ta8sf" path="res://Scenes/Upgrade.tscn" id="6_xkg4x"]
+[ext_resource type="Script" path="res://Scripts/Skill.gd" id="7_8dhaw"]
+[ext_resource type="Script" path="res://Scripts/Statistics.gd" id="8_m5wwx"]
+[ext_resource type="Texture2D" uid="uid://dfqc0nd1il0or" path="res://Resources/Passive Items/gfx/Sprite might.png" id="9_6jn3f"]
+[ext_resource type="Texture2D" uid="uid://cg8ts14eqkamd" path="res://Resources/Passive Items/gfx/Sprite armor.png" id="10_p8fvl"]
+[ext_resource type="Texture2D" uid="uid://bjr5hxpe2uu10" path="res://Resources/Passive Items/gfx/Sprite recovery.png" id="11_v70su"]
+[ext_resource type="Texture2D" uid="uid://bigb63pgja6e6" path="res://Resources/UI/GUI1.png" id="12_bys6f"]
+[ext_resource type="Script" path="res://Scripts/EnnemyList.gd" id="13_upm4l"]
+[ext_resource type="Script" path="res://Scripts/UIGold.gd" id="14_fj0pj"]
+[ext_resource type="Texture2D" uid="uid://ci07nvv7tg5qo" path="res://Resources/Pickups/gfx/Gold.png" id="15_m7orv"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dr1ho"]
-texture = ExtResource("9_0gckc")
+texture = ExtResource("3_d11t8")
 texture_margin_left = 7.0
 texture_margin_top = 8.0
 texture_margin_right = 7.0
@@ -26,7 +26,7 @@ axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q2j21"]
-texture = ExtResource("9_0gckc")
+texture = ExtResource("3_d11t8")
 texture_margin_left = 7.0
 texture_margin_top = 7.0
 texture_margin_right = 7.0
@@ -36,7 +36,7 @@ axis_stretch_vertical = 2
 region_rect = Rect2(0, 0, 48, 32)
 
 [sub_resource type="Resource" id="Resource_75fqe"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.0
@@ -48,14 +48,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_lskc6"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Might I"
-texture = ExtResource("4_ldhq3")
+texture = ExtResource("9_6jn3f")
 cost = 10
 stats = SubResource("Resource_75fqe")
 
 [sub_resource type="Resource" id="Resource_il1dk"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.0
@@ -67,14 +67,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_dgoxi"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Might II"
-texture = ExtResource("4_ldhq3")
+texture = ExtResource("9_6jn3f")
 cost = 50
 stats = SubResource("Resource_il1dk")
 
 [sub_resource type="Resource" id="Resource_qs3cl"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.0
@@ -86,14 +86,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_a5m33"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Might III"
-texture = ExtResource("4_ldhq3")
+texture = ExtResource("9_6jn3f")
 cost = 100
 stats = SubResource("Resource_qs3cl")
 
 [sub_resource type="Resource" id="Resource_7ccqg"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.0
@@ -105,14 +105,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_fp31a"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Might IV"
-texture = ExtResource("4_ldhq3")
+texture = ExtResource("9_6jn3f")
 cost = 200
 stats = SubResource("Resource_7ccqg")
 
 [sub_resource type="Resource" id="Resource_vxkv6"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.0
@@ -124,14 +124,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_fevw5"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Might V"
-texture = ExtResource("4_ldhq3")
+texture = ExtResource("9_6jn3f")
 cost = 500
 stats = SubResource("Resource_vxkv6")
 
 [sub_resource type="Resource" id="Resource_r122x"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.0
@@ -143,14 +143,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_dajvp"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Armor IV"
-texture = ExtResource("6_flt5f")
+texture = ExtResource("10_p8fvl")
 cost = 10
 stats = SubResource("Resource_r122x")
 
 [sub_resource type="Resource" id="Resource_qnt6p"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.0
@@ -162,14 +162,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_02ifr"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Armor II"
-texture = ExtResource("6_flt5f")
+texture = ExtResource("10_p8fvl")
 cost = 50
 stats = SubResource("Resource_qnt6p")
 
 [sub_resource type="Resource" id="Resource_jvabf"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.0
@@ -181,14 +181,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_geuss"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Armor III"
-texture = ExtResource("6_flt5f")
+texture = ExtResource("10_p8fvl")
 cost = 100
 stats = SubResource("Resource_jvabf")
 
 [sub_resource type="Resource" id="Resource_fns0a"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.0
@@ -200,14 +200,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_0sdbx"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Armor IV"
-texture = ExtResource("6_flt5f")
+texture = ExtResource("10_p8fvl")
 cost = 200
 stats = SubResource("Resource_fns0a")
 
 [sub_resource type="Resource" id="Resource_evck6"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.1
@@ -219,14 +219,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_wxf5r"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Recovery I"
-texture = ExtResource("7_fw0rx")
+texture = ExtResource("11_v70su")
 cost = 10
 stats = SubResource("Resource_evck6")
 
 [sub_resource type="Resource" id="Resource_pt5ag"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.1
@@ -238,14 +238,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_tj78u"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Recovery II"
-texture = ExtResource("7_fw0rx")
+texture = ExtResource("11_v70su")
 cost = 50
 stats = SubResource("Resource_pt5ag")
 
 [sub_resource type="Resource" id="Resource_c1yfk"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.1
@@ -257,14 +257,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_emya3"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Recovery III"
-texture = ExtResource("7_fw0rx")
+texture = ExtResource("11_v70su")
 cost = 100
 stats = SubResource("Resource_c1yfk")
 
 [sub_resource type="Resource" id="Resource_y4yrg"]
-script = ExtResource("3_pvmlp")
+script = ExtResource("8_m5wwx")
 description = ""
 max_health = 0.0
 recovery = 0.2
@@ -276,14 +276,14 @@ magnet = 0.0
 growth = 0.0
 
 [sub_resource type="Resource" id="Resource_yfor0"]
-script = ExtResource("2_bw8rk")
+script = ExtResource("7_8dhaw")
 name = "Recovery IV"
-texture = ExtResource("7_fw0rx")
+texture = ExtResource("11_v70su")
 cost = 200
 stats = SubResource("Resource_y4yrg")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jsmgl"]
-texture = ExtResource("9_0gckc")
+texture = ExtResource("3_d11t8")
 texture_margin_left = 7.0
 texture_margin_top = 7.0
 texture_margin_right = 7.0
@@ -292,7 +292,7 @@ axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pu2ky"]
-texture = ExtResource("9_ec8ka")
+texture = ExtResource("12_bys6f")
 texture_margin_left = 3.0
 texture_margin_top = 3.0
 texture_margin_right = 3.0
@@ -302,7 +302,7 @@ axis_stretch_vertical = 2
 region_rect = Rect2(0, 0, 30, 30)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i5yyp"]
-texture = ExtResource("9_ec8ka")
+texture = ExtResource("12_bys6f")
 texture_margin_left = 3.0
 texture_margin_top = 3.0
 texture_margin_right = 3.0
@@ -311,7 +311,7 @@ axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fd26d"]
-texture = ExtResource("9_0gckc")
+texture = ExtResource("3_d11t8")
 texture_margin_left = 7.0
 texture_margin_top = 7.0
 texture_margin_right = 7.0
@@ -330,11 +330,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_muwil")
-script = ExtResource("2_dmbs4")
+theme = ExtResource("1_he7j0")
+script = ExtResource("2_vu1v8")
 
 [node name="Menu" type="Panel" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -360,7 +359,7 @@ grow_vertical = 0
 scale = Vector2(2, 2)
 theme_override_font_sizes/font_size = 40
 text = "Start"
-script = ExtResource("10_r8b31")
+script = ExtResource("4_pipdu")
 metadata/_edit_use_anchors_ = true
 
 [node name="Upgrades" type="Button" parent="Menu"]
@@ -406,7 +405,7 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(576, 324)
 theme_override_styles/panel = SubResource("StyleBoxTexture_q2j21")
-script = ExtResource("1_2xwl1")
+script = ExtResource("5_uydkk")
 metadata/_edit_use_anchors_ = true
 
 [node name="Might" type="Control" parent="SkillTree"]
@@ -420,7 +419,7 @@ offset_top = 63.696
 offset_right = -0.0640259
 offset_bottom = 63.968
 
-[node name="Upgrade" parent="SkillTree/Might" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade" parent="SkillTree/Might" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 8.0
@@ -428,7 +427,7 @@ offset_right = 48.0
 offset_bottom = 48.0
 skill = SubResource("Resource_lskc6")
 
-[node name="Upgrade2" parent="SkillTree/Might" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade2" parent="SkillTree/Might" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 72.0
 offset_top = 8.0
@@ -436,7 +435,7 @@ offset_right = 112.0
 offset_bottom = 48.0
 skill = SubResource("Resource_dgoxi")
 
-[node name="Upgrade3" parent="SkillTree/Might" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade3" parent="SkillTree/Might" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 136.0
 offset_top = 8.0
@@ -444,7 +443,7 @@ offset_right = 176.0
 offset_bottom = 48.0
 skill = SubResource("Resource_a5m33")
 
-[node name="Upgrade4" parent="SkillTree/Might" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade4" parent="SkillTree/Might" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 200.0
 offset_top = 8.0
@@ -452,7 +451,7 @@ offset_right = 240.0
 offset_bottom = 48.0
 skill = SubResource("Resource_fp31a")
 
-[node name="Upgrade5" parent="SkillTree/Might" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade5" parent="SkillTree/Might" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 264.0
 offset_top = 8.0
@@ -471,7 +470,7 @@ offset_top = 64.192
 offset_right = 0.447998
 offset_bottom = 63.816
 
-[node name="Upgrade" parent="SkillTree/Armor" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade" parent="SkillTree/Armor" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 8.0
@@ -479,7 +478,7 @@ offset_right = 48.0
 offset_bottom = 48.0
 skill = SubResource("Resource_dajvp")
 
-[node name="Upgrade2" parent="SkillTree/Armor" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade2" parent="SkillTree/Armor" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 72.0
 offset_top = 8.0
@@ -487,7 +486,7 @@ offset_right = 112.0
 offset_bottom = 48.0
 skill = SubResource("Resource_02ifr")
 
-[node name="Upgrade3" parent="SkillTree/Armor" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade3" parent="SkillTree/Armor" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 136.0
 offset_top = 8.0
@@ -495,7 +494,7 @@ offset_right = 176.0
 offset_bottom = 48.0
 skill = SubResource("Resource_geuss")
 
-[node name="Upgrade4" parent="SkillTree/Armor" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade4" parent="SkillTree/Armor" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 200.0
 offset_top = 8.0
@@ -510,31 +509,32 @@ offset_top = 320.0
 offset_right = 376.0
 offset_bottom = 376.0
 
-[node name="Upgrade" parent="SkillTree/Recovery" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade" parent="SkillTree/Recovery" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 8.0
 offset_right = 48.0
 skill = SubResource("Resource_wxf5r")
 
-[node name="Upgrade2" parent="SkillTree/Recovery" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade2" parent="SkillTree/Recovery" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 72.0
 offset_right = 112.0
 skill = SubResource("Resource_tj78u")
 
-[node name="Upgrade3" parent="SkillTree/Recovery" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade3" parent="SkillTree/Recovery" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 136.0
 offset_right = 176.0
 skill = SubResource("Resource_emya3")
 
-[node name="Upgrade4" parent="SkillTree/Recovery" instance=ExtResource("1_c3f5a")]
+[node name="Upgrade4" parent="SkillTree/Recovery" instance=ExtResource("6_xkg4x")]
 layout_mode = 0
 offset_left = 200.0
 offset_right = 240.0
 skill = SubResource("Resource_yfor0")
 
 [node name="Bestiary" type="Panel" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -555,7 +555,7 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_pu2ky")
 [node name="EnnemyList" type="VBoxContainer" parent="Bestiary/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-script = ExtResource("13_y58ey")
+script = ExtResource("13_upm4l")
 
 [node name="Information" type="Panel" parent="Bestiary"]
 layout_mode = 0
@@ -632,12 +632,12 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "0000000"
 horizontal_alignment = 2
-script = ExtResource("5_iehcn")
+script = ExtResource("14_fj0pj")
 
 [node name="Sprite2D" type="Sprite2D" parent="Gold"]
 position = Vector2(281.5, 22)
 scale = Vector2(2, 2)
-texture = ExtResource("6_w8bbn")
+texture = ExtResource("15_m7orv")
 
 [node name="Back" type="Button" parent="."]
 visible = false

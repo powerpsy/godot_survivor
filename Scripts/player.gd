@@ -72,7 +72,7 @@ func _physics_process(delta):
 
 func take_damage(amount):
 	health -= max(amount - armor, 1) # addiditve armor
-#	helath -= max(amount * (amount/(amount + armor)), 1) # multiplicative armour
+#	health -= max(amount * (amount/(amount + armor)), 1) # multiplicative armour
 
 func _on_self_damage_body_entered(body):
 	take_damage(body.damage)

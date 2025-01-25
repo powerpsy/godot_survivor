@@ -1,10 +1,11 @@
 [gd_resource type="Resource" script_class="MagicLightning" load_steps=6 format=3 uid="uid://cdhlsk3six0sv"]
 
-[ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/projectile.tscn" id="1_88gdx"]
+[ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/Projectile.tscn" id="1_88gdx"]
 [ext_resource type="Texture2D" uid="uid://cqc4mij7leymy" path="res://Resources/Weapons/gfx/Holy lightning.png" id="1_jg57v"]
 [ext_resource type="Script" path="res://Scripts/MagicLightning.gd" id="2_fs334"]
 [ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="3_6n847"]
 [ext_resource type="Texture2D" uid="uid://bcimkubocw0jh" path="res://Resources/Weapons/gfx/Sprite holy lightning.png" id="4_nlsjs"]
+
 
 [resource]
 script = ExtResource("2_fs334")

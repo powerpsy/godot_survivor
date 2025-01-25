@@ -11,4 +11,4 @@ func _on_pressed():
 	get_tree().paused = false
 	SaveData.gold += owner.gold
 	SaveData.set_and_save()
-	get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")

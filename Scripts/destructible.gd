@@ -9,7 +9,7 @@ var health : float = 10:
 			drop_item()
 			
 @onready var player_reference = get_tree().current_scene.find_child("Player")
-var drop_node = preload("res://Scenes/pickups.tscn")
+var drop_node = preload("res://Scenes/Pickups.tscn")
 @export var drops : Array[Pickups]
 
 func _physics_process(delta):

@@ -3,10 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://4xcqn66sik4h" path="res://Resources/Pickups/gfx/Torch.png" id="1_e2etq"]
 [ext_resource type="Script" path="res://Scripts/Destructible.gd" id="2_5hfnp"]
 [ext_resource type="Script" path="res://Scripts/PickupResource.gd" id="3_2smmi"]
-[ext_resource type="Resource" uid="uid://okilnwxytoe2" path="res://Resources/Pickups/heart.tres" id="4_6yar8"]
-[ext_resource type="Resource" uid="uid://c67v2v263gtq2" path="res://Resources/Pickups/rosary.tres" id="5_637rh"]
-[ext_resource type="Resource" uid="uid://be6khutienogw" path="res://Resources/Pickups/vacuum.tres" id="6_wg4ek"]
-[ext_resource type="Resource" uid="uid://cvh17vldmyes7" path="res://Resources/Pickups/gold.tres" id="7_hxhw3"]
+[ext_resource type="Resource" uid="uid://okilnwxytoe2" path="res://Resources/Pickups/Heart.tres" id="4_6yar8"]
+[ext_resource type="Resource" uid="uid://c67v2v263gtq2" path="res://Resources/Pickups/Rosary.tres" id="5_637rh"]
+[ext_resource type="Resource" uid="uid://be6khutienogw" path="res://Resources/Pickups/Vacuum.tres" id="6_wg4ek"]
+[ext_resource type="Resource" uid="uid://cvh17vldmyes7" path="res://Resources/Pickups/Gold.tres" id="7_hxhw3"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mqajo"]
 radius = 6.0

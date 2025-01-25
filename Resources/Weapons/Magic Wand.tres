@@ -2,8 +2,8 @@
 
 [ext_resource type="Resource" uid="uid://c2xiw5fcvswu3" path="res://Resources/Weapons/Holy wand.tres" id="1_c00h6"]
 [ext_resource type="Resource" uid="uid://d20u7wmxf2wy4" path="res://Resources/Passive Items/Magnet.tres" id="2_mxekv"]
-[ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/projectile.tscn" id="3_bu16r"]
 [ext_resource type="Script" path="res://Scripts/SingleShot.gd" id="4_2hshj"]
+[ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/Projectile.tscn" id="4_7tn3m"]
 [ext_resource type="AudioStream" uid="uid://hkgh30hln5l0" path="res://Resources/Weapons/sfx/Magic wand.wav" id="5_c1ali"]
 [ext_resource type="Texture2D" uid="uid://dpugdx40i8umu" path="res://Resources/Weapons/gfx/Magic wand.png" id="5_uvh3i"]
 [ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="6_e652v"]
@@ -85,7 +85,7 @@ script = ExtResource("4_2hshj")
 damage = 1.0
 cooldown = 0.5
 speed = 500.0
-projectile_node = ExtResource("3_bu16r")
+projectile_node = ExtResource("4_7tn3m")
 upgrades = Array[ExtResource("6_e652v")]([SubResource("Resource_qfkst"), SubResource("Resource_r2hoa"), SubResource("Resource_66xao"), SubResource("Resource_vplyh"), SubResource("Resource_wq2mx"), SubResource("Resource_svb8v"), SubResource("Resource_kkytx"), SubResource("Resource_bcv1o"), SubResource("Resource_dlrju"), SubResource("Resource_vgiqv")])
 item_needed = ExtResource("2_mxekv")
 evolution = ExtResource("1_c00h6")

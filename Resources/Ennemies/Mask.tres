@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Scripts/PickupResource.gd" id="1_fvkic"]
 [ext_resource type="Script" path="res://Scripts/EnnemyType.gd" id="1_kmsje"]
-[ext_resource type="Resource" uid="uid://dv11w3t7e6sxl" path="res://Resources/Pickups/gem_blue.tres" id="2_f17r3"]
-[ext_resource type="Resource" uid="uid://bus1aayij3xcm" path="res://Resources/Pickups/gem_green.tres" id="3_ira5x"]
+[ext_resource type="Resource" uid="uid://dv11w3t7e6sxl" path="res://Resources/Pickups/GemBlue.tres" id="2_f17r3"]
+[ext_resource type="Resource" uid="uid://bus1aayij3xcm" path="res://Resources/Pickups/GemGreen.tres" id="3_ira5x"]
 [ext_resource type="Texture2D" uid="uid://dams2b2cgvaps" path="res://Resources/Ennemies_gfx/Mask.png" id="5_7kxxk"]
 
 [resource]

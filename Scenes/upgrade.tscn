@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://n7x1rf7ta8sf"]
 
-[ext_resource type="Script" path="res://Scripts/Upgrade_button.gd" id="1_mcyev"]
-[ext_resource type="PackedScene" uid="uid://xjpla8f5g8lh" path="res://Scenes/line_2d.tscn" id="2_xeqmy"]
+[ext_resource type="Script" path="res://Scripts/UpgradeButton.gd" id="1_mcyev"]
+[ext_resource type="PackedScene" uid="uid://xjpla8f5g8lh" path="res://Scenes/Line2d.tscn" id="2_xeqmy"]
 
 [node name="Upgrade" type="TextureButton"]
 offset_right = 40.0

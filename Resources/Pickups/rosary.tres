@@ -10,3 +10,4 @@ title = "Rosary"
 icon = ExtResource("1_f8qgd")
 description = "Destroys all minions around"
 sound = ExtResource("3_5vun8")
+weight = 0.2

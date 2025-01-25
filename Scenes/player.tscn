@@ -1,16 +1,11 @@
-[gd_scene load_steps=34 format=3 uid="uid://bytik7vxy8glv"]
+[gd_scene load_steps=29 format=3 uid="uid://bytik7vxy8glv"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_qn32x"]
 [ext_resource type="Texture2D" uid="uid://c5hmj1cr8vqr2" path="res://Resources/UI/Star.png" id="2_x5aam"]
 [ext_resource type="Texture2D" uid="uid://b6v1y7lts3nk" path="res://Resources/UI/GUI2.png" id="3_avath"]
 [ext_resource type="PackedScene" uid="uid://bqp2j0ltvnkx0" path="res://Scenes/Slot.tscn" id="4_5x7rj"]
-[ext_resource type="Resource" uid="uid://cxbva202ej7d1" path="res://Resources/Weapons/Magic bible.tres" id="5_6fmwq"]
-[ext_resource type="Resource" uid="uid://d1ttytgpsgin1" path="res://Resources/Weapons/Magic lightning.tres" id="6_8c7m2"]
-[ext_resource type="Resource" uid="uid://bid5nrm6s4ui3" path="res://Resources/Weapons/Magic Wand.tres" id="7_ly4x4"]
+[ext_resource type="Resource" uid="uid://bid5nrm6s4ui3" path="res://Resources/Weapons/Magic wand.tres" id="7_ly4x4"]
 [ext_resource type="PackedScene" uid="uid://b5n1ivpnsdpyk" path="res://Scenes/PassiveSlot.tscn" id="8_lmu7m"]
-[ext_resource type="Resource" uid="uid://d20u7wmxf2wy4" path="res://Resources/Passive Items/Magnet.tres" id="9_fjtuw"]
-[ext_resource type="Resource" uid="uid://q7fqm0kio41x" path="res://Resources/Passive Items/Recovery.tres" id="10_05wcg"]
-[ext_resource type="Resource" uid="uid://dfvapublk4yew" path="res://Resources/Passive Items/Armor.tres" id="11_r7kjg"]
 [ext_resource type="Texture2D" uid="uid://empavmgcy0s3" path="res://Resources/UI/Exp-under.png" id="12_6pqnb"]
 [ext_resource type="Texture2D" uid="uid://b5pejo60chdmp" path="res://Resources/UI/Exp-bar.png" id="13_iqg5q"]
 [ext_resource type="Texture2D" uid="uid://nb3ar74enmt0" path="res://Resources/UI/Exp-progress.png" id="14_hyrxi"]
@@ -140,6 +135,26 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Armor: 0"
 
+[node name="CollectRange" type="Label" parent="UI/Debug"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Collect: 0"
+
+[node name="CurrentHealth" type="Label" parent="UI/Debug"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Health: 0"
+
+[node name="MovementSpeed" type="Label" parent="UI/Debug"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Speed: 0"
+
+[node name="Luck" type="Label" parent="UI/Debug"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Luck: 0"
+
 [node name="Gold" type="Label" parent="UI"]
 unique_name_in_owner = true
 offset_left = 32.0
@@ -201,15 +216,13 @@ offset_bottom = 72.0
 
 [node name="Slot" parent="UI/Weapons" instance=ExtResource("4_5x7rj")]
 layout_mode = 2
-item = ExtResource("5_6fmwq")
+item = ExtResource("7_ly4x4")
 
 [node name="Slot2" parent="UI/Weapons" instance=ExtResource("4_5x7rj")]
 layout_mode = 2
-item = ExtResource("6_8c7m2")
 
 [node name="Slot3" parent="UI/Weapons" instance=ExtResource("4_5x7rj")]
 layout_mode = 2
-item = ExtResource("7_ly4x4")
 
 [node name="Slot4" parent="UI/Weapons" instance=ExtResource("4_5x7rj")]
 layout_mode = 2
@@ -222,15 +235,12 @@ offset_bottom = 116.0
 
 [node name="PassiveSlot" parent="UI/PassiveItems" instance=ExtResource("8_lmu7m")]
 layout_mode = 2
-item = ExtResource("9_fjtuw")
 
 [node name="PassiveSlot2" parent="UI/PassiveItems" instance=ExtResource("8_lmu7m")]
 layout_mode = 2
-item = ExtResource("10_05wcg")
 
 [node name="PassiveSlot3" parent="UI/PassiveItems" instance=ExtResource("8_lmu7m")]
 layout_mode = 2
-item = ExtResource("11_r7kjg")
 
 [node name="PassiveSlot4" parent="UI/PassiveItems" instance=ExtResource("8_lmu7m")]
 layout_mode = 2

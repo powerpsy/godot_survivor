@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=10 format=3 uid="uid://cheul473vdseq"]
+
+[ext_resource type="Texture2D" uid="uid://ckerx07i80p02" path="res://Resources/PassiveItems_gfx/Luck.png" id="1_ow3r7"]
+[ext_resource type="Script" path="res://Scripts/PassiveItem.gd" id="2_w4bfp"]
+[ext_resource type="Texture2D" uid="uid://brqlemoovyrfj" path="res://Resources/PassiveItems_gfx/Sprite luck.png" id="3_nh253"]
+[ext_resource type="Script" path="res://Scripts/Statistics.gd" id="4_vo6ca"]
+
+[sub_resource type="Resource" id="Resource_wmate"]
+script = ExtResource("4_vo6ca")
+description = "+ 10% Luck"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+luck = 0.1
+
+[sub_resource type="Resource" id="Resource_nmnc5"]
+script = ExtResource("4_vo6ca")
+description = "+ 10% Luck"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+luck = 0.1
+
+[sub_resource type="Resource" id="Resource_eqy8j"]
+script = ExtResource("4_vo6ca")
+description = "+ 10% Luck"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+luck = 0.1
+
+[sub_resource type="Resource" id="Resource_t8ju8"]
+script = ExtResource("4_vo6ca")
+description = "+ 10% Luck"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+luck = 0.1
+
+[sub_resource type="Resource" id="Resource_yapei"]
+script = ExtResource("4_vo6ca")
+description = "+ 10% Luck"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+luck = 0.1
+
+[resource]
+script = ExtResource("2_w4bfp")
+upgrades = Array[ExtResource("4_vo6ca")]([SubResource("Resource_wmate"), SubResource("Resource_nmnc5"), SubResource("Resource_eqy8j"), SubResource("Resource_t8ju8"), SubResource("Resource_yapei")])
+title = "Lucky ring"
+icon = ExtResource("1_ow3r7")
+texture = ExtResource("3_nh253")

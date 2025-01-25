@@ -3,10 +3,10 @@
 [ext_resource type="Resource" uid="uid://0cd40nv4woci" path="res://Resources/Weapons/Holy bible.tres" id="1_86ep2"]
 [ext_resource type="Script" path="res://Scripts/MagicBible.gd" id="2_pverv"]
 [ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="3_ip5xl"]
-[ext_resource type="Texture2D" uid="uid://cd7a30dwhbmpd" path="res://Resources/Weapons/gfx/Magic bible.png" id="3_r7cwf"]
-[ext_resource type="Resource" uid="uid://q7fqm0kio41x" path="res://Resources/Passive Items/Recovery.tres" id="3_sxqss"]
+[ext_resource type="Texture2D" uid="uid://cd7a30dwhbmpd" path="res://Resources/Weapons_gfx/Magic bible.png" id="3_r7cwf"]
+[ext_resource type="Resource" uid="uid://q7fqm0kio41x" path="res://Resources/PassiveItems/Recovery.tres" id="3_sxqss"]
 [ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/Projectile.tscn" id="4_6e0gj"]
-[ext_resource type="Texture2D" uid="uid://ctt0e0xl7f8d3" path="res://Resources/Weapons/gfx/Sprite magic bible.png" id="4_ctoeq"]
+[ext_resource type="Texture2D" uid="uid://ctt0e0xl7f8d3" path="res://Resources/Weapons_gfx/Sprite magic bible.png" id="4_ctoeq"]
 [ext_resource type="Script" path="res://Scripts/MagicBibleUpgrade.gd" id="5_bitpu"]
 
 [sub_resource type="Resource" id="Resource_714oq"]

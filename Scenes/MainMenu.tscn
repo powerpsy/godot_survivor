@@ -8,9 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://n7x1rf7ta8sf" path="res://Scenes/Upgrade.tscn" id="6_xkg4x"]
 [ext_resource type="Script" path="res://Scripts/Skill.gd" id="7_8dhaw"]
 [ext_resource type="Script" path="res://Scripts/Statistics.gd" id="8_m5wwx"]
-[ext_resource type="Texture2D" uid="uid://dfqc0nd1il0or" path="res://Resources/Passive Items/gfx/Sprite might.png" id="9_6jn3f"]
-[ext_resource type="Texture2D" uid="uid://cg8ts14eqkamd" path="res://Resources/Passive Items/gfx/Sprite armor.png" id="10_p8fvl"]
-[ext_resource type="Texture2D" uid="uid://bjr5hxpe2uu10" path="res://Resources/Passive Items/gfx/Sprite recovery.png" id="11_v70su"]
+[ext_resource type="Texture2D" uid="uid://dfqc0nd1il0or" path="res://Resources/PassiveItems_gfx/Sprite might.png" id="9_6jn3f"]
+[ext_resource type="Texture2D" uid="uid://cg8ts14eqkamd" path="res://Resources/PassiveItems_gfx/Sprite armor.png" id="10_p8fvl"]
+[ext_resource type="Texture2D" uid="uid://bjr5hxpe2uu10" path="res://Resources/PassiveItems_gfx/Sprite recovery.png" id="11_v70su"]
 [ext_resource type="Texture2D" uid="uid://bigb63pgja6e6" path="res://Resources/UI/GUI1.png" id="12_bys6f"]
 [ext_resource type="Script" path="res://Scripts/EnnemyList.gd" id="13_upm4l"]
 [ext_resource type="Script" path="res://Scripts/UIGold.gd" id="14_fj0pj"]
@@ -46,6 +46,7 @@ might = 0.1
 area = 0.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_lskc6"]
 script = ExtResource("7_8dhaw")
@@ -65,6 +66,7 @@ might = 0.1
 area = 0.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_dgoxi"]
 script = ExtResource("7_8dhaw")
@@ -84,6 +86,7 @@ might = 0.1
 area = 0.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_a5m33"]
 script = ExtResource("7_8dhaw")
@@ -103,6 +106,7 @@ might = 0.1
 area = 0.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_fp31a"]
 script = ExtResource("7_8dhaw")
@@ -122,6 +126,7 @@ might = 0.1
 area = 0.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_fevw5"]
 script = ExtResource("7_8dhaw")
@@ -141,6 +146,7 @@ might = 0.0
 area = 0.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_dajvp"]
 script = ExtResource("7_8dhaw")
@@ -160,6 +166,7 @@ might = 0.0
 area = 0.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_02ifr"]
 script = ExtResource("7_8dhaw")
@@ -179,6 +186,7 @@ might = 0.0
 area = 0.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_geuss"]
 script = ExtResource("7_8dhaw")
@@ -198,6 +206,7 @@ might = 0.0
 area = 1.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_0sdbx"]
 script = ExtResource("7_8dhaw")
@@ -217,6 +226,7 @@ might = 0.0
 area = 0.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_wxf5r"]
 script = ExtResource("7_8dhaw")
@@ -236,6 +246,7 @@ might = 0.0
 area = 0.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_tj78u"]
 script = ExtResource("7_8dhaw")
@@ -255,6 +266,7 @@ might = 0.0
 area = 0.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_emya3"]
 script = ExtResource("7_8dhaw")
@@ -274,6 +286,7 @@ might = 0.0
 area = 0.0
 magnet = 0.0
 growth = 0.0
+luck = 0.0
 
 [sub_resource type="Resource" id="Resource_yfor0"]
 script = ExtResource("7_8dhaw")

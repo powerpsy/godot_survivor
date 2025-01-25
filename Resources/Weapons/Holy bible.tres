@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="MagicBible" load_steps=6 format=3 uid="uid://0cd40nv4woci"]
 
-[ext_resource type="Texture2D" uid="uid://bb103y3radro3" path="res://Resources/Weapons/gfx/Holy bible.png" id="1_8sgd0"]
+[ext_resource type="Texture2D" uid="uid://bb103y3radro3" path="res://Resources/Weapons_gfx/Holy bible.png" id="1_8sgd0"]
 [ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/Projectile.tscn" id="1_sx8av"]
 [ext_resource type="Script" path="res://Scripts/MagicBible.gd" id="2_4ndw4"]
 [ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="3_y2m36"]
-[ext_resource type="Texture2D" uid="uid://bppr4ykxm3fja" path="res://Resources/Weapons/gfx/Sprite holy bible.png" id="4_a7jqm"]
+[ext_resource type="Texture2D" uid="uid://bppr4ykxm3fja" path="res://Resources/Weapons_gfx/Sprite holy bible.png" id="4_a7jqm"]
 
 
 [resource]

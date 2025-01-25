@@ -10,3 +10,4 @@ title = "Vacuum"
 icon = ExtResource("1_r3p7m")
 description = "Attract all gems"
 sound = ExtResource("3_ydshd")
+weight = 0.5

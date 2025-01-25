@@ -11,3 +11,4 @@ title = "Heart"
 icon = ExtResource("1_54x1i")
 description = "+20 Health"
 sound = ExtResource("3_w8ivw")
+weight = 0.5

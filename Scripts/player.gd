@@ -2,14 +2,18 @@ extends CharacterBody2D
 
 const acceleration = 3000
 var motion = Vector2()
-var health: float = 100:
+var health : float = 499:
 	set(value):
 		health = max(value, 0)
 		%Health.value = value
+		%CurrentHealth.text = "Health: " + str(value)
 		if health <= 0:
 			get_tree().paused = true
-var movement_speed : float = 300
-var max_health : float = 120:
+var movement_speed : float = 300:
+	set(value):
+		movement_speed = value
+		%MovementSpeed.text = "Speed: " + str(value)
+var max_health : float = 500:
 	set(value):
 		max_health = value
 		%Health.max_value = value
@@ -29,8 +33,13 @@ var area : float = 0
 var magnet : float = 0:
 	set(value):
 		magnet = value
+		%CollectRange.text = "Magnet: " + str(value)
 		%Magnet.shape.radius = 100 + value
 var growth : float = 1
+var luck : float = 2.0:
+	set(value):
+		luck = value
+		%Luck.text = "Luck: " + str(value)
 
 var nearest_ennemy
 var nearest_ennemy_distance : float = 300 + area

@@ -6,8 +6,9 @@
 
 [resource]
 script = ExtResource("2_u5r8v")
-XP = 500.0
+XP = 5.0
 title = "Green gem"
 icon = ExtResource("1_j4vpv")
 description = "Gain XP points"
 sound = ExtResource("3_ey6i8")
+weight = 0.0

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MagicGarlic" load_steps=6 format=3 uid="uid://ciotc02n6r0mq"]
+
+[ext_resource type="Texture2D" uid="uid://2xfsbdhjyyqy" path="res://Resources/Weapons_gfx/Holy garlic.png" id="1_g6nh0"]
+[ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/Projectile.tscn" id="2_4ax2y"]
+[ext_resource type="Script" path="res://Scripts/MagicGarlic.gd" id="3_i7e6e"]
+[ext_resource type="Texture2D" uid="uid://cidru52r711tf" path="res://Resources/Weapons_gfx/Sprite holy garlic.png" id="4_gr6le"]
+[ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="5_cphtg"]
+
+[resource]
+script = ExtResource("3_i7e6e")
+angular_speed = 3.0
+area = 4.0
+damage = 10.0
+cooldown = 0.0
+speed = 0.0
+projectile_node = ExtResource("2_4ax2y")
+upgrades = Array[ExtResource("5_cphtg")]([])
+title = "Holy garlic"
+icon = ExtResource("1_g6nh0")
+texture = ExtResource("4_gr6le")

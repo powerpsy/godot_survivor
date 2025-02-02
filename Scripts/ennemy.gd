@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var player_reference : CharacterBody2D
 var damage_popup_node = preload("res://Scenes/Damage.tscn")
 var direction : Vector2
-var speed : float = 200
+var speed : float = 150
 const knock_back = 100
 var damage : float
 var knockback : Vector2
@@ -72,7 +72,6 @@ func take_damage(amount):
 
 	var chance = randf()
 	var modifier : float = 2.0 if (chance < (1.0 - (1.0/player_reference.luck))) else 1.0
-	
 
 	damage_popup(amount, modifier)
 	health -= amount * modifier

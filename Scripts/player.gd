@@ -9,7 +9,7 @@ var health : float = 499:
 		%CurrentHealth.text = "Health: " + str(value)
 		if health <= 0:
 			get_tree().paused = true
-var movement_speed : float = 300:
+var movement_speed : float = 200:
 	set(value):
 		movement_speed = value
 		%MovementSpeed.text = "Speed: " + str(value)

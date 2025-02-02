@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://drxrp5flub45u"
+path="res://.godot/imported/Magic garlic.wav-c1bf6d3cf0f5f0950e9ae6c48dd939ce.sample"
+
+[deps]
+
+source_file="res://Resources/Weapons_sfx/Magic garlic.wav"
+dest_files=["res://.godot/imported/Magic garlic.wav-c1bf6d3cf0f5f0950e9ae6c48dd939ce.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,76 @@
+[gd_resource type="Resource" script_class="MagicGarlic" load_steps=17 format=3 uid="uid://c0hp3kl61ohjd"]
+
+[ext_resource type="Texture2D" uid="uid://c2nlaxy0pvakj" path="res://Resources/Weapons_gfx/Magic garlic.png" id="1_j1nro"]
+[ext_resource type="Resource" uid="uid://ciotc02n6r0mq" path="res://Resources/Weapons/Holy Garlic.tres" id="1_pfrn5"]
+[ext_resource type="Resource" uid="uid://q7fqm0kio41x" path="res://Resources/PassiveItems/Recovery.tres" id="2_7ep16"]
+[ext_resource type="PackedScene" uid="uid://dtajlnopsns8x" path="res://Scenes/Projectile.tscn" id="2_o1snt"]
+[ext_resource type="Script" path="res://Scripts/MagicGarlic.gd" id="3_74e4s"]
+[ext_resource type="AudioStream" uid="uid://drxrp5flub45u" path="res://Resources/Weapons_sfx/Magic garlic.wav" id="4_3q6nf"]
+[ext_resource type="Texture2D" uid="uid://bocfwrx8lf4y5" path="res://Resources/Weapons_gfx/Sprite magic garlic.png" id="5_yqpc1"]
+[ext_resource type="Script" path="res://Scripts/Upgrade.gd" id="6_5a327"]
+[ext_resource type="Script" path="res://Scripts/MagicGarlicUpgrade.gd" id="7_niu8o"]
+
+[sub_resource type="Resource" id="Resource_631ko"]
+script = ExtResource("7_niu8o")
+area = 0.0
+damage = 1.0
+cooldown = 0.0
+description = "+1 Damage"
+
+[sub_resource type="Resource" id="Resource_dmyi6"]
+script = ExtResource("7_niu8o")
+area = 0.3
+damage = 0.0
+cooldown = 0.0
+description = "+1 Area"
+
+[sub_resource type="Resource" id="Resource_hsjtu"]
+script = ExtResource("7_niu8o")
+area = 0.3
+damage = 0.0
+cooldown = 0.0
+description = "+1 Area"
+
+[sub_resource type="Resource" id="Resource_gtyce"]
+script = ExtResource("7_niu8o")
+area = 0.0
+damage = 0.0
+cooldown = 0.3
+description = "-1s Cooldown"
+
+[sub_resource type="Resource" id="Resource_fwdfy"]
+script = ExtResource("7_niu8o")
+area = 0.0
+damage = 1.0
+cooldown = 0.0
+description = "+1 Damage"
+
+[sub_resource type="Resource" id="Resource_kksp0"]
+script = ExtResource("7_niu8o")
+area = 0.3
+damage = 0.0
+cooldown = 0.0
+description = "+1 Area"
+
+[sub_resource type="Resource" id="Resource_00d65"]
+script = ExtResource("7_niu8o")
+area = 0.0
+damage = 0.0
+cooldown = 0.3
+description = "-0.3s Cooldown"
+
+[resource]
+script = ExtResource("3_74e4s")
+angular_speed = 10.0
+area = 1.0
+damage = 3.0
+cooldown = 1.3
+speed = 0.0
+projectile_node = ExtResource("2_o1snt")
+upgrades = Array[ExtResource("6_5a327")]([SubResource("Resource_631ko"), SubResource("Resource_dmyi6"), SubResource("Resource_hsjtu"), SubResource("Resource_gtyce"), SubResource("Resource_fwdfy"), SubResource("Resource_kksp0"), SubResource("Resource_00d65")])
+item_needed = ExtResource("2_7ep16")
+evolution = ExtResource("1_pfrn5")
+sound = ExtResource("4_3q6nf")
+title = ""
+icon = ExtResource("1_j1nro")
+texture = ExtResource("5_yqpc1")

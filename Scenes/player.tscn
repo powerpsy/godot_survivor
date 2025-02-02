@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c5hmj1cr8vqr2" path="res://Resources/UI/Star.png" id="2_x5aam"]
 [ext_resource type="Texture2D" uid="uid://b6v1y7lts3nk" path="res://Resources/UI/GUI2.png" id="3_avath"]
 [ext_resource type="PackedScene" uid="uid://bqp2j0ltvnkx0" path="res://Scenes/Slot.tscn" id="4_5x7rj"]
-[ext_resource type="Resource" uid="uid://bid5nrm6s4ui3" path="res://Resources/Weapons/Magic wand.tres" id="7_ly4x4"]
+[ext_resource type="Resource" uid="uid://c0hp3kl61ohjd" path="res://Resources/Weapons/Magic garlic.tres" id="5_xiesb"]
 [ext_resource type="PackedScene" uid="uid://b5n1ivpnsdpyk" path="res://Scenes/PassiveSlot.tscn" id="8_lmu7m"]
 [ext_resource type="Texture2D" uid="uid://empavmgcy0s3" path="res://Resources/UI/Exp-under.png" id="12_6pqnb"]
 [ext_resource type="Texture2D" uid="uid://b5pejo60chdmp" path="res://Resources/UI/Exp-bar.png" id="13_iqg5q"]
@@ -216,7 +216,7 @@ offset_bottom = 72.0
 
 [node name="Slot" parent="UI/Weapons" instance=ExtResource("4_5x7rj")]
 layout_mode = 2
-item = ExtResource("7_ly4x4")
+item = ExtResource("5_xiesb")
 
 [node name="Slot2" parent="UI/Weapons" instance=ExtResource("4_5x7rj")]
 layout_mode = 2
